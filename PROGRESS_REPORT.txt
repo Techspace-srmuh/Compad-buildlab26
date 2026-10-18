@@ -1,0 +1,97 @@
+================================================================================
+             COMPAD — OFFLINE-FIRST CAMPUS COMPANION APP
+                    PROJECT PROGRESS & ROADMAP REPORT
+================================================================================
+
+EVENT:             TechSpace BuildLab '26
+TRACK:             Advanced — Squad (3-4 Members)
+PROBLEM STATEMENT: A08 (Offline-first Campus Companion App)
+TEAM NAME:         Matrix
+GITHUB REPO:       https://github.com/jitin-s/compad
+LAST UPDATED:      October 18, 2026
+
+--------------------------------------------------------------------------------
+01. TEAM COMPOSITION & ROLES
+--------------------------------------------------------------------------------
+Team Name: Matrix
+
+1. Jitin Sain   | 1st Year B.Tech CSE-AIML | Team Lead / Mobile Architecture & Sync
+2. Yash Malik    | 1st Year B.Tech CSE-AIML | Frontend / Flutter UI & State Management
+3. Kartik Maan   | 1st Year B.Tech CSE-AIML | Frontend / UI Components & Client Integration
+4. Vansh         | 1st Year B.Tech CSE-AIML | Backend / Node.js API & Database Engineering
+
+--------------------------------------------------------------------------------
+02. EXECUTIVE SUMMARY & PROBLEM CONTEXT
+--------------------------------------------------------------------------------
+Campus mobile connectivity is notoriously unstable—basement labs, dense lecture
+halls, and overloaded campus Wi-Fi lead to constant dropouts. CompAd is a 100% 
+offline-first, zero-latency mobile platform designed for ALL college students 
+across any university or department.
+
+--------------------------------------------------------------------------------
+03. RECENT MAJOR UPDATES & NEW CAPABILITIES
+--------------------------------------------------------------------------------
+
+[✔] 1. UNIVERSAL STUDENT IDENTITY CHIP (REPLACED INSTITUTION-SPECIFIC VAULT)
+    - Removed hardcoded institution cards (Central Library, Apex Institute, HPC).
+    - Introduced the single, universal Student Identity Chip for ALL colleges.
+    - Fields: Student Name, College Name, Roll No. / Reg No., Year of Study,
+      and Department.
+    - Setup once on install, with a prominent "Skip for now" option so students
+      are never blocked or forced to fill out forms.
+    - Details automatically link across the entire app (Hub greeting, ID chip,
+      export headers, and sharing payloads).
+
+[✔] 2. DYNAMIC QR CODE & DUAL P2P AIR-SHARE (BLUETOOTH + WI-FI)
+    - Interactive QR code generated on the Student Identity Chip.
+    - Tap to expand QR code for camera scanning by other CompAd users.
+    - Two working transport options for sharing lightweight documents (timetables,
+      notes, datesheets):
+      * ⚡ Local Wi-Fi Direct: In-memory offline HTTP server with pairing QR code.
+      * 📶 Bluetooth / Quick Share: Direct native wireless exchange with zero router.
+    - Built-in camera scanner powered by mobile_scanner for 1-tap peer import.
+
+[✔] 3. ANONYMOUS SHARING & FULL IDENTITY MODES
+    - Privacy toggle: "Anonymous Identity" (hides name, college, and roll number)
+      vs "Share Full Details" (attaches Student Identity Chip details).
+    - Gives students full privacy control when transferring schedules or notes.
+
+[✔] 4. LOCAL SHARING HISTORY & AUDIT TRAIL
+    - Complete sent and received transfer history persisted in on-device SQLite.
+    - Individual item deletion and "Clear All Records" option with confirmation.
+    - 100% customizable and deletable by the user.
+
+[✔] 5. BIOMETRIC SECURITY AS AN OPTIONAL SETTING
+    - Biometrics are NO LONGER compulsory.
+    - Managed via the new in-app "Settings & Security" screen.
+    - Students can toggle Biometric App Lock ON or OFF anytime.
+    - Smooth fallback and bypass options available.
+
+[✔] 6. STUDENT-ENTERED TIMETABLE & ATTENDANCE + AI/ML IMAGE RECOGNITION
+    - Timetable and attendance fully editable and created by students.
+    - "AI Scan Image" feature: Student uploads a photo/screenshot of a timetable;
+      on-device AI/ML text recognition (Google ML Kit OCR) extracts days,
+      time ranges, course codes, and classrooms automatically.
+    - Interactive review sheet previews courses and slots before 1-tap import.
+
+[✔] 7. HUB & DASHBOARD BOTTOM ALIGNMENT FIX
+    - Fixed bottom scrolling padding across Hub, Timetable, Lab, Notes, and Vault.
+    - Floating action buttons and utility cards now sit with perfect clearance
+      above the floating spatial glass dock without collision or cutoff.
+
+[✔] 8. OPTIMIZED APP SIZE (< 100MB CONSTRAINT MET)
+    - Standalone Mobile Release APK: ~45.2 MB (ARM64-v8a for modern Android phones).
+    - 32-bit Legacy APK: ~35.8 MB.
+    - Well within the 100MB limit with all AI models and database encryption included.
+
+--------------------------------------------------------------------------------
+04. COMPILED ARTIFACTS
+--------------------------------------------------------------------------------
+- Primary Mobile APK (Recommended):
+  `D:\CompAd\comp_ad\compad-mobile-release.apk` (45.19 MB)
+- Build Output Directory:
+  `D:\CompAd\comp_ad\build\app\outputs\flutter-apk\`
+
+================================================================================
+Report prepared for Team Matrix | BuildLab '26 Track Advanced Squad
+================================================================================

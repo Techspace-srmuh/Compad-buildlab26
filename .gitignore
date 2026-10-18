@@ -1,0 +1,52 @@
+# ==============================================================================
+# CompAd Repository .gitignore
+# ==============================================================================
+
+# Flutter & Dart Build Output & Cache
+comp_ad/.dart_tool/
+comp_ad/.flutter-plugins
+comp_ad/.flutter-plugins-dependencies
+comp_ad/.pub-cache/
+comp_ad/.pub/
+comp_ad/build/
+comp_ad/coverage/
+**/doc/api/
+
+# Android Build Outputs & Intermediate Files
+comp_ad/android/.gradle/
+comp_ad/android/local.properties
+comp_ad/android/build/
+comp_ad/android/app/build/
+comp_ad/android/app/debug/
+comp_ad/android/app/profile/
+comp_ad/android/app/release/
+*.apk
+**/build/
+
+# iOS Build & Ephemeral
+comp_ad/ios/Pods/
+comp_ad/ios/.symlinks/
+comp_ad/ios/Flutter/ephemeral/
+comp_ad/ios/Flutter/Generated.xcconfig
+comp_ad/ios/Flutter/flutter_export_environment.sh
+comp_ad/ios/Flutter/app.framework
+comp_ad/ios/Flutter/Flutter.framework
+comp_ad/ios/Flutter/Flutter.podspec
+comp_ad/ios/DerivedData/
+comp_ad/ios/**/xcuserdata/
+
+# IDE & Editor Files
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Test & Temp
+*.class
+*.pyc
+
