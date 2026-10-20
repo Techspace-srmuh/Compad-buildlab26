@@ -196,7 +196,14 @@ CompAd is fully equipped with iOS permissions, AppIcon assets, and CocoaPods con
 ---
 
 ## 👥 Team Matrix
+### Team Members
 
+| # | Name | Year / Program | Role / Focus |
+|---|------|----------------|--------------|
+| 1 | **Jitin Sain** | 1st Year / B.Tech CSE-AIML | Team Lead / Mobile Architecture & Sync |
+| 2 | **Yash Malik** | 1st Year / B.Tech CSE-AIML | Frontend / Flutter UI & State Management |
+| 3 | **Kartik Maan** | 1st Year / B.Tech CSE-AIML | Frontend / UI Components & Client Integration |
+| 4 | **Vansh** | 1st Year / B.Tech CSE-AIML | Backend / Node.js API & Database Engineering |
 Developed with passion by **Team Matrix** for **TechSpace BuildLab ’26** (Problem Statement **A08**).
 
 - **Project Lead & Architecture:** Team Matrix
