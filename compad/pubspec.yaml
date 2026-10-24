@@ -1,0 +1,112 @@
+name: compad
+description: "Compad: Offline-First University Campus Companion App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management & Routing
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.8.1
+
+  # Local DB & Persistence
+  drift: ^2.26.0
+  sqlite3_flutter_libs: ^0.5.28
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  shared_preferences: ^2.5.2
+  flutter_secure_storage: ^9.2.4
+
+  # Maps & Navigation
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Charts & Visualizations
+  fl_chart: ^0.70.2
+
+  # Barcodes & QR
+  qr_flutter: ^4.1.0
+  barcode_widget: ^2.0.4
+
+  # Media & Audio
+  just_audio: ^0.9.44
+  record: ^7.1.2
+
+  # Offline P2P Share Server (Shelf) & Networking
+  shelf: ^1.4.2
+  shelf_router: ^1.1.4
+  network_info_plus: ^6.1.1
+  http: ^1.3.0
+
+  # Cryptography & Security
+  crypto: ^3.0.7
+  cryptography: ^2.7.2
+  encrypt: ^5.0.3
+  local_auth: ^2.3.0
+
+  # Notifications & Date/Time
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  intl: ^0.20.2
+  uuid: ^4.5.1
+
+  # Documents & Markdown
+  pdf: ^3.11.1
+  printing: ^5.13.2
+  flutter_markdown: ^0.7.6+1
+
+  cupertino_icons: ^1.0.8
+  mobile_scanner: ^7.4.2
+  file_picker: ^11.0.3
+  url_launcher: ^6.3.3
+  open_filex: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.15
+  drift_dev: ^2.26.0
+  mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/branding/icon_full.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#3F3DDB"
+  adaptive_icon_foreground: "assets/branding/icon_foreground.png"
+  adaptive_icon_monochrome: "assets/branding/icon_monochrome.png"
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/branding/icon_full.png"
+    background_color: "#3F3DDB"
+    theme_color: "#3F3DDB"
+
+flutter_native_splash:
+  color: "#3F3DDB"
+  color_dark: "#1E1B4B"
+  image: "assets/branding/splash_logo.png"
+  image_dark: "assets/branding/splash_logo.png"
+  android_12:
+    color: "#3F3DDB"
+    color_dark: "#1E1B4B"
+    image: "assets/branding/splash_logo.png"
+    image_dark: "assets/branding/splash_logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/branding/
+    - assets/seed/

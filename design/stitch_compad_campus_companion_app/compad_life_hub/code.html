@@ -1,0 +1,456 @@
+<!DOCTYPE html><html class="h-full" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><title>Compad</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "primary-fixed": "#e1dfff", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#08006c", "error-container": "#ffdad6", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "secondary-container": "#6df5e1", "secondary-fixed-dim": "#4fdbc8", "tertiary-fixed": "#ffddb8", "background": "#faf8ff", "on-primary-fixed-variant": "#2c26cb", "outline": "#767587", "surface-tint": "#4746e2", "primary-fixed-dim": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "primary-container": "#3f3ddb", "on-secondary-fixed": "#00201c", "secondary": "#006b5f", "surface": "#faf8ff", "primary": "#2319c5", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f64", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "on-tertiary-container": "#ffc277", "on-surface-variant": "#464555", "on-tertiary": "#ffffff", "surface-variant": "#dae2fd", "tertiary": "#5c3800", "surface-container": "#eaedff", "on-primary-container": "#c9c8ff", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "inverse-primary": "#c1c1ff", "tertiary-container": "#7b4d00", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed": "#71f8e4", "surface-container-high": "#e2e7ff", "outline-variant": "#c7c4d8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Compad Brand Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V8pF8NrWqqjyJJQnFdwZQxwcuT9MNAuF_6-MjuMdk1uGFYWm17ar9qtfMtaecHBprODvQY1y3XBSjvpuhavxiEMXkjiUrYboUBmLqn4SRxl6pvv26jfYC6WmQoa1xrlqGfcA3rAilkRxrtfDi77M8PmM9XwpOc44InJc6nvMa2FPUWybLela84U0toqt9_fR8ZTPUsL6w8UhfdQTFvqVfOP0-NDScQaE-0CsQMFaB1YADSkTm1W5QF3yc"><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface truncate">Compad</span><div class="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="material-symbols-outlined text-[13px] leading-none text-secondary">cloud_done</span><span class="font-label-sm text-label-sm leading-none hidden xs:inline">Offline Ready</span></div></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Campus Life</span></div></div><div class="flex items-center gap-1.5 flex-shrink-0"><button aria-label="Search campus resources" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors active:scale-95"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Campus Emergency SOS" class="h-9 px-2.5 flex items-center justify-center gap-1 rounded-full bg-error text-on-error shadow-[0_2px_8px_rgba(186,26,26,0.35)] active:scale-95 transition-transform" data-path="sos-emergency" href="#"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-sm text-label-sm tracking-wider uppercase font-bold">SOS</span></a><a aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 active:scale-95 transition-transform" data-path="student-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.12)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Mf6WF0AkTSFIQQ8HyZ1mfLDe2FOZAsnmxjPehYOGz9xeWj5bapau8GqJr-B2kSC4mmuK8ZC9KbHEXQjjxnvgAUT18uDmSrbl7oavXLyQmiUgqSIOtUZam0L1sTxp1SWk0Zmc4R8TW0aZUC221epj4xyWS1LNAjuO-4Wuo0xYHZTtX1cfRRrJVkHjcNucSpU4LCxyHSw3lSjsRw2Cn0Yi3hpCswJIpWw6NXeh_qMoMnOZcfeGHcXl"></a></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-14 pb-28 bg-surface"><div class="flex flex-col w-full gap-space-lg select-none pb-4">
+<!-- Greeting & Quick Stats Pill -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Campus Life Hub</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Good afternoon, Aarav!</h1>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-md text-label-md text-on-surface">340 Pts</span>
+</div>
+</div>
+<!-- 1. Digital Student ID & Meal Plan Wallet Card -->
+<div class="relative overflow-hidden rounded-[24px] bg-gradient-to-br from-primary-container via-primary to-[#18118c] text-on-primary p-space-md shadow-[0_12px_32px_-6px_rgba(35,25,197,0.35)] flex flex-col gap-space-md">
+<!-- Ambient Holographic Glow & Decorative Watermark -->
+<div class="absolute -right-12 -top-12 w-44 h-44 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-36 h-36 rounded-full bg-tertiary-fixed/15 blur-xl pointer-events-none"></div>
+<div class="absolute right-4 bottom-14 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[110px]">school</span>
+</div>
+<!-- Pass Header -->
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-md" data-alt="Portrait photo of a young male South Asian college student with friendly smile, wearing a casual navy crewneck against a soft blurred university campus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Ur0tEw672sayXKfgvUoUa14sCzfgMW8xtzJ-WaDxGkssM-nVnodVdt21rGVdBE7wmAwBmdeilx0t3K13yceC9iwDhRMbrMm5wPjMOxYeDzRTadNTTMFPEf23fdvkIkNJcWKgagr4NY8bE4Fy5eUrRoHVUStXeghXTw3HOuAycr98rkDf42kXxuHsJCINcvWgaDplGySe39THGA0YySx7A-LfAHoo59YcLl-AzWFCvq0zoqQBtoa0">
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-secondary-fixed font-bold">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-title-md text-title-md tracking-tight text-white">Aarav Sharma</h2>
+<span class="bg-white/20 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider backdrop-blur-sm">UG-4</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed opacity-90">ID #2024-8849 • CS &amp; Data Sci</span>
+</div>
+</div>
+<!-- Max Brightness Action Button -->
+<button class="flex items-center gap-1 bg-white/15 hover:bg-white/25 active:scale-95 transition-all text-white px-2.5 py-1.5 rounded-full text-[11px] font-semibold backdrop-blur-md" id="brightnessToggle">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed">light_mode</span>
+<span class="">Max Light</span>
+</button>
+</div>
+<!-- Scannable Barcode & QR Box -->
+<div class="bg-white rounded-xl p-3 text-on-surface flex items-center justify-between gap-3 shadow-sm transition-all duration-300" id="barcodePanel">
+<div class="flex flex-col flex-1 min-w-0">
+<!-- Pseudo Code-128 Barcode via crisp CSS bars -->
+<div aria-label="Barcode ID 20248849" class="h-10 w-full flex items-stretch justify-between gap-[2px] bg-white overflow-hidden py-0.5">
+<div class="w-1.5 bg-neutral-900 rounded-sm"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-1 bg-neutral-900"></div>
+<div class="w-2 bg-neutral-900"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-1 bg-neutral-900"></div>
+<div class="w-2 bg-neutral-900"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-1.5 bg-neutral-900"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-2 bg-neutral-900"></div>
+<div class="w-1 bg-neutral-900"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-1.5 bg-neutral-900"></div>
+<div class="w-2 bg-neutral-900"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-1 bg-neutral-900"></div>
+<div class="w-2 bg-neutral-900"></div>
+<div class="w-0.5 bg-neutral-900"></div>
+<div class="w-1 bg-neutral-900"></div>
+<div class="w-1.5 bg-neutral-900"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-neutral-500 font-mono tracking-widest mt-0.5">
+<span class="">*2024-8849-01*</span>
+<span class="text-[9px] uppercase font-bold text-secondary">NFC Active</span>
+</div>
+</div>
+<!-- Miniature QR Code -->
+<div class="w-12 h-12 bg-neutral-950 p-1 rounded-lg flex items-center justify-center flex-shrink-0">
+<!-- SVG QR Matrix Mock -->
+<svg class="w-full h-full text-white" fill="currentColor" viewBox="0 0 24 24">
+<path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm14 0h4v2h-4v-2zm-4 0h2v4h-2v-4zm2 4h4v2h-4v-2zm0-2h2v2h-2v-2zm2-2h2v2h-2v-2zM5 5h2v2H5V5zm12 0h2v2h-2V5zM5 17h2v2H5v-2z"></path>
+</svg>
+</div>
+</div>
+<!-- Live Dining Swipes & Cash Balances -->
+<div class="grid grid-cols-2 gap-2 relative z-10">
+<div class="bg-white/10 backdrop-blur-md rounded-xl p-2.5 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary/30 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[16px] leading-tight text-white font-bold">14 Swipes</span>
+<span class="font-label-sm text-[11px] text-primary-fixed truncate">Left this week</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-xl p-2.5 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed/30 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[16px] leading-tight text-white font-bold">$142.50</span>
+<span class="font-label-sm text-[11px] text-tertiary-fixed truncate">Dining Dollars</span>
+</div>
+</div>
+</div>
+</div><div class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_2px_12px_rgba(15,23,42,0.06)] flex flex-col gap-3 relative overflow-hidden"><div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">work</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-2"><h3 class="font-title-md text-[15px] font-bold text-on-surface">Career &amp; Growth Vault</h3><span class="px-2 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant text-[10px] font-bold uppercase tracking-wider">Level 4</span></div><p class="font-body-sm text-[11px] text-on-surface-variant truncate">Internships, Smart Resume, Credentials Vault &amp; XP Quests</p></div></div><button aria-label="Open Career Hub" class="w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary flex items-center justify-center active:scale-95 transition-all flex-shrink-0"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><div class="flex items-center justify-between pt-1 border-t border-surface-container-high/60"><div class="flex items-center gap-2"><span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-on-surface font-semibold"><span class="material-symbols-outlined text-[14px] text-primary">assignment</span>4 Active Applications</span><span class="text-on-surface-variant text-[11px]">•</span><span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-secondary font-semibold"><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span>92 ATS Score</span></div><a class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-0.5" data-path="career-growth" href="#"><span class="">Open Vault</span><span class="material-symbols-outlined text-[14px]">chevron_right</span></a></div></div>
+<!-- 2. Club Events & RSVP Carousel -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">event_upcoming</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Club Events</h2>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-0.5 active:scale-95">
+<span class="">Explore All</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Horizontal Swipe Cards -->
+<div class="flex gap-3 overflow-x-auto pb-1 -mx-margin px-margin scrollbar-none snap-x snap-mandatory">
+<!-- Card 1: HackUT -->
+<div class="min-w-[270px] max-w-[270px] snap-start bg-surface-container-lowest rounded-2xl p-3 shadow-[0_2px_12px_rgba(15,23,42,0.06)] flex flex-col gap-2.5 flex-shrink-0">
+<div class="relative h-28 w-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vibrant technology hackathon poster with neon purple and cyan lighting, students collaborating on laptops in modern glass lab, digital code projections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXg57Fdg-5pbmnqMG8Atg7BPS8v1iFb99FDDQ6fiOZpOU1LSLQqe7MHbHaJj-84OkVKzhYZlKHojoo_T_UQZ8RD5TFj5vvDJWCF0Zb8ZtGmreVQswY4h_hHpkldscphM1324tcWABUNpbR0wFXdF7si-ihxVxKCB9e8jhs5u3VW03TkN60-tAl7R5ssdzByv5jlm1nGhapfgkC3sqqLNlHi0YsxqrwqRL4ongGO_AJdMMTFqYJDO_N">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<span class="absolute top-2 left-2 bg-error text-on-error font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Priority</span>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-end text-white">
+<span class="text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed">schedule</span>
+              Tomorrow 6:00 PM
+            </span>
+<span class="text-[10px] bg-white/20 backdrop-blur-sm px-1.5 py-0.5 rounded text-white">Eng Hall 104</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-[15px] leading-tight text-on-surface font-bold">HackUT 2024 Kickoff</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Keynote, team matching &amp; free midnight pizza</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex -space-x-1.5 overflow-hidden">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center text-[10px] font-bold">JD</div>
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-[10px] font-bold">KL</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center text-[9px] font-bold">+86</div>
+</div>
+<button class="rsvp-btn px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" onclick="toggleRsvp(this)">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="">Going ✓</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Sunset Hike -->
+<div class="min-w-[270px] max-w-[270px] snap-start bg-surface-container-lowest rounded-2xl p-3 shadow-[0_2px_12px_rgba(15,23,42,0.06)] flex flex-col gap-2.5 flex-shrink-0">
+<div class="relative h-28 w-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Scenic golden hour landscape with pine trees and university students hiking along a mountain ridge overlooking campus valley in warm sunset light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnblKML9V0oBIk_WkAuz6zjdiEQQXSGYF5BHLMHzLuj898mvF6W_R4O3pqn5_NrlBiJq6yVzCAVtIfLcp2e-Wy3tjH3A4Vxl5DNHucK_ss-kV2OAE1OMA0sgHXP_AD3RWR7cIiqdjYsVXrk3FO4FsKmLi5cX5NK49Nf6hEfVJi2pznwXgS-gNeggKiXF3CSp_cqF0hHI1HV_2HsbPsdaFzm2OzJFF43VKWUilTDnS35S2jdOIrIZkP">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Outdoors</span>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-end text-white">
+<span class="text-[11px] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed">calendar_today</span>
+              Saturday 5:30 PM
+            </span>
+<span class="text-[10px] bg-white/20 backdrop-blur-sm px-1.5 py-0.5 rounded text-white">West Trailhead</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-[15px] leading-tight text-on-surface font-bold">Sunset Ridge Hike</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">3.2 mile casual scenic walk. S'mores included!</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant text-[11px] font-medium">
+<span class="material-symbols-outlined text-[15px] text-secondary">group</span>
+<span class="">24 attending</span>
+</div>
+<button class="rsvp-btn px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" onclick="toggleRsvp(this)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span class="">Join</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. 3D Flashcards Quick Study Deck -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">style</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Daily Quick Recall</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CS 370 • Distributed Systems</span>
+</div>
+<!-- Progress indicator -->
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-medium pt-1">
+<span class="">Mastery Progress</span>
+<span class="text-primary font-bold">18 / 30 cards mastered</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 60%;"></div>
+</div>
+<!-- 3D Flip Card Container -->
+<div class="mt-2" style="perspective: 1000px;">
+<div class="relative w-full min-h-[170px] rounded-2xl cursor-pointer transition-transform duration-500 shadow-md [transform-style:preserve-3d]" id="flashcard" onclick="flipCard()">
+<!-- Front of Card -->
+<div class="absolute inset-0 w-full h-full bg-gradient-to-br from-surface-container-low to-surface-container-lowest rounded-2xl p-4 flex flex-col justify-between [backface-visibility:hidden]" id="cardFront">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-[10px] font-bold uppercase tracking-wider">Concept Card #19</span>
+<span class="text-on-surface-variant flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px]">touch_app</span>
+              Tap to flip
+            </span>
+</div>
+<div class="py-2 text-center my-auto">
+<p class="font-headline-sm text-[17px] leading-snug text-on-surface font-semibold">
+              What is the CAP Theorem in Distributed Systems?
+            </p>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+<span class="">Difficulty: <strong class="text-tertiary">Medium</strong></span>
+<span class="text-primary font-semibold flex items-center gap-0.5">
+<span class="">View Answer</span>
+<span class="material-symbols-outlined text-[14px]">sync</span>
+</span>
+</div>
+</div>
+<!-- Back of Card -->
+<div class="absolute inset-0 w-full h-full bg-surface-container-highest rounded-2xl p-4 flex flex-col justify-between [transform:rotateY(180deg)] [backface-visibility:hidden]" id="cardBack">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-wider">Answer Revealed</span>
+<span class="text-on-surface-variant flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px]">flip</span>
+              Tap to flip back
+            </span>
+</div>
+<div class="py-1 text-left my-auto">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+              States that a distributed data store can simultaneously provide at most two of three guarantees: 
+              <strong class="text-primary">Consistency</strong>, 
+              <strong class="text-secondary">Availability</strong>, and 
+              <strong class="text-tertiary">Partition Tolerance</strong>.
+            </p>
+</div>
+<div class="text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">info</span>
+<span class="">Network partitions are inevitable, so choose CP or AP.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Thumb Buttons -->
+<div class="grid grid-cols-2 gap-3 mt-1">
+<button class="h-11 bg-surface-container-high hover:bg-surface-container-highest active:scale-95 transition-transform rounded-xl text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm" onclick="handleReview(event)">
+<span class="material-symbols-outlined text-[18px] text-tertiary">replay</span>
+<span class="">Review Again</span>
+</button>
+<button class="h-11 bg-primary text-on-primary hover:bg-primary-container active:scale-95 transition-transform rounded-xl font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm" onclick="handleKnow(event)">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">verified</span>
+<span class="">I Know This!</span>
+</button>
+</div>
+</div>
+<!-- 4. Campus Marketplace & Book Exchange -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">storefront</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Campus Exchange</h2>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-0.5 active:scale-95">
+<span class="">Sell Item</span>
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+</button>
+</div>
+<!-- 2-Column Marketplace Grid -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-[0_2px_10px_rgba(15,23,42,0.05)] flex flex-col justify-between gap-2">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Cover of Algorithms 4th Edition textbook by Robert Sedgewick sitting neatly on a university library wooden desk, sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHPdeqDZ-ulFJODz1xhcaV2NTlSoYigOFFgN-ezAxEN1dQxJjSltwzV9CEhBk_gZ01mqOOQ2rpAisGBjZ8cV79oCv8_PJvEP0bGHinQC4_JBabOZBJFNgiCG6wAl0lKN8FrZI3lB0fbheqfkfYekikSP8kXqFlsk65lG_ctNBAqleHKOgwRtX_RfPmMzfH5NQHVdI5mXdEzcME3Su0ID36luwUV7cQnLdsiiHsP-Tu5lRGlsdHxki">
+<span class="absolute bottom-1.5 left-1.5 bg-black/70 backdrop-blur-md text-white font-headline-sm text-[13px] px-2 py-0.5 rounded-md font-bold">$25</span>
+<span class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-white/90 text-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">favorite</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">verified</span>
+<span class="text-[10px] text-on-surface-variant font-medium">Elena R. • Junior</span>
+</div>
+<h3 class="font-title-md text-[13px] leading-tight text-on-surface font-semibold line-clamp-1 mt-0.5">Algorithms (4th Ed)</h3>
+<span class="text-[10px] text-on-surface-variant">Good cond • No marks</span>
+</div>
+<button class="w-full h-8 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[14px] text-primary">chat</span>
+<span class="">Chat Seller</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-[0_2px_10px_rgba(15,23,42,0.05)] flex flex-col justify-between gap-2">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="TI-84 Plus CE Graphing Calculator in mint condition resting beside engineering graph paper and ballpoint pen on desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuFkSxgkI0mtIcNHr6jPzm1b-bx4L7YQjJF-k6k3d_hLRMQCH57CUKZtrp3P0n2IZJalsFXj1cG4Z8S5EcBT4sBf3PLnq17Kpmyp_nhJHrJY5fIqXtAvdsnFahYYUKCpl80ZrQMtffccjGReIQGMvlX23aI-sZDKZKjnx1IItOAyE__Bu1TNh8xxq4MlHDVpvVeICtpN0D7nprUGqSKu__uW6KR2fjjE48QUbi7ApxCTNtI2hqm4RF">
+<span class="absolute bottom-1.5 left-1.5 bg-black/70 backdrop-blur-md text-white font-headline-sm text-[13px] px-2 py-0.5 rounded-md font-bold">$40</span>
+<span class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-white/90 text-on-surface-variant hover:text-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">favorite</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">verified</span>
+<span class="text-[10px] text-on-surface-variant font-medium">Marcus T. • Senior</span>
+</div>
+<h3 class="font-title-md text-[13px] leading-tight text-on-surface font-semibold line-clamp-1 mt-0.5">TI-84 Plus Calculator</h3>
+<span class="text-[10px] text-on-surface-variant">Includes USB charger</span>
+</div>
+<button class="w-full h-8 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[14px] text-primary">chat</span>
+<span class="">Chat Seller</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 5. Lost & Found Community Snippet -->
+<div class="bg-surface-container-low rounded-2xl p-3.5 flex flex-col gap-2.5 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-error">travel_explore</span>
+<h3 class="font-title-md text-[14px] font-bold text-on-surface">Campus Lost &amp; Found</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Post Claim</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-2.5 flex items-center gap-3">
+<img class="w-14 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Close up photo of Apple AirPods Pro white charging case resting on a polished lecture hall bench in Turing Hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-PrqmEDpdBDHrMrlj2JD_EXpKJeTTeedztRdvlmvN--2dlLBaRNkBaOd5XQnaRw4shFtg42TszqE0m4FRCio1zHLHmEMwKQ2mw1Kd-VGn4X1YXlOBxSEvBskOb_QSLAJAEyqp3Cb76ocZz4Sz-yQfdtNuvPUKoOJK_Cqk4cDP_MrgQuwBUKmHU6mFAxu52Vc4CKOIvgc9RLtx7G8bFcLxyus6WFUXKbODqMwpkU4ZygG4wUzXycMW">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="bg-error-container text-on-error-container text-[9px] font-bold px-1.5 py-0.5 rounded uppercase">Found Today</span>
+<span class="text-[10px] text-on-surface-variant truncate">24 mins ago</span>
+</div>
+<h4 class="font-title-md text-[13px] font-semibold text-on-surface truncate mt-0.5">AirPods Pro in Turing Hall</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant truncate">Turned in at Room 204 Service Desk.</p>
+</div>
+<button class="px-2.5 py-1.5 bg-surface-container-high text-primary rounded-lg text-[11px] font-semibold flex-shrink-0 active:scale-95">
+        Claim
+      </button>
+</div>
+</div>
+<!-- 6. Student Radio & Campus News Mini Player -->
+<div class="sticky bottom-0 z-30 bg-surface-container-highest/95 backdrop-blur-md rounded-2xl p-3 shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+<!-- Album Art / Radio Icon -->
+<div class="relative w-11 h-11 rounded-xl bg-primary flex items-center justify-center text-on-primary flex-shrink-0 overflow-hidden shadow-sm">
+<span class="material-symbols-outlined text-[24px]">radio</span>
+<span class="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+</div>
+<!-- Station Info -->
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-[10px] text-primary uppercase font-bold tracking-wider">K-CAMP 91.3 FM</span>
+<span class="inline-flex items-center gap-0.5 text-[10px] text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[11px] text-error">sensors</span>
+<span class="">142 listening</span>
+</span>
+</div>
+<span class="font-title-md text-[13px] leading-tight text-on-surface font-semibold truncate">
+        Lo-Fi Study Beats Session • Live DJ Mint
+      </span>
+</div>
+<!-- Playback Controls -->
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Heart Track" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-error active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<button aria-label="Play or pause campus radio" class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:scale-95 transition-transform" id="radioPlayBtn" onclick="toggleRadioPlay()">
+<span class="material-symbols-outlined text-[22px]" id="radioIcon">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // 1. Digital ID Max Brightness Boost Effect
+  const brightnessBtn = document.getElementById('brightnessToggle');
+  const barcodePanel = document.getElementById('barcodePanel');
+  let isMaxBright = false;
+
+  brightnessBtn.addEventListener('click', () => {
+    isMaxBright = !isMaxBright;
+    if (isMaxBright) {
+      barcodePanel.classList.add('ring-4', 'ring-secondary-fixed', 'shadow-2xl', 'scale-[1.02]');
+      brightnessBtn.classList.add('bg-white', 'text-on-surface');
+      brightnessBtn.innerHTML = '<span class="material-symbols-outlined text-[15px] text-tertiary">flare</span><span>Boosted</span>';
+    } else {
+      barcodePanel.classList.remove('ring-4', 'ring-secondary-fixed', 'shadow-2xl', 'scale-[1.02]');
+      brightnessBtn.classList.remove('bg-white', 'text-on-surface');
+      brightnessBtn.innerHTML = '<span class="material-symbols-outlined text-[15px] text-secondary-fixed">light_mode</span><span>Max Light</span>';
+    }
+  });
+
+  // 2. RSVP Interactive Toggle
+  function toggleRsvp(btn) {
+    const isGoing = btn.classList.contains('bg-primary');
+    if (isGoing) {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">add</span><span>RSVP</span>';
+    } else {
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span><span>Going ✓</span>';
+    }
+  }
+
+  // 3. 3D Flashcard Flip Micro-interaction
+  let isFlipped = false;
+  function flipCard() {
+    const card = document.getElementById('flashcard');
+    isFlipped = !isFlipped;
+    if (isFlipped) {
+      card.style.transform = 'rotateY(180deg)';
+    } else {
+      card.style.transform = 'rotateY(0deg)';
+    }
+  }
+
+  function handleKnow(e) {
+    e.stopPropagation();
+    const card = document.getElementById('flashcard');
+    card.classList.add('translate-x-2', 'opacity-80');
+    setTimeout(() => {
+      card.classList.remove('translate-x-2', 'opacity-80');
+      if (isFlipped) flipCard();
+    }, 250);
+  }
+
+  function handleReview(e) {
+    e.stopPropagation();
+    const card = document.getElementById('flashcard');
+    card.classList.add('-translate-x-2', 'opacity-80');
+    setTimeout(() => {
+      card.classList.remove('-translate-x-2', 'opacity-80');
+      if (!isFlipped) flipCard();
+    }, 250);
+  }
+
+  // 4. Mini Radio Play/Pause Micro-interaction
+  let isRadioPlaying = false;
+  function toggleRadioPlay() {
+    isRadioPlaying = !isRadioPlaying;
+    const icon = document.getElementById('radioIcon');
+    if (isRadioPlaying) {
+      icon.textContent = 'pause';
+    } else {
+      icon.textContent = 'play_arrow';
+    }
+  }
+</script></main><div class="fixed bottom-0 inset-x-0 z-50 pointer-events-none"><div class="relative max-w-[440px] mx-auto"><div class="absolute left-1/2 -top-6 -translate-x-1/2 pointer-events-auto z-20"><button aria-label="Quick Add Menu" class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] p-0.5 active:scale-95 transition-transform ring-4 ring-surface" id="quickAddFab" onclick="toggleQuickAddSheet()"><span class="material-symbols-outlined text-[30px] transition-transform duration-300" id="quickAddFabIcon">add</span></button></div></div><div class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm pointer-events-auto hidden transition-opacity opacity-0" id="quickAddBackdrop" onclick="toggleQuickAddSheet()"></div><div class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest rounded-t-[28px] p-5 shadow-[0_-8px_32px_rgba(15,23,42,0.18)] pointer-events-auto max-w-[440px] mx-auto transform translate-y-full transition-transform duration-300 pb-safe hidden flex flex-col gap-4" id="quickAddSheet"><div class="w-10 h-1 bg-surface-container-high rounded-full mx-auto -mt-1"></div><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary">add_circle</span><h3 class="font-title-lg text-title-lg text-on-surface">Quick Add</h3></div><button aria-label="Close menu" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="toggleQuickAddSheet()"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="grid grid-cols-4 gap-3 py-1"><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-primary-fixed text-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">check_box</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Task</span></button><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-secondary-fixed/40 text-secondary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">edit_note</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Note</span></button><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">style</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Flashcard</span></button><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">sentiment_satisfied</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Mood</span></button><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">mic</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Voice note</span></button><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-secondary-fixed/60 text-on-secondary-fixed flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">payments</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Expense</span></button><button class="flex flex-col items-center gap-1.5 active:scale-95 transition-transform text-center"><div class="w-12 h-12 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">document_scanner</span></div><span class="font-label-sm text-[11px] text-on-surface font-medium">Scan doc</span></button></div></div><script>function toggleQuickAddSheet(){const sheet=document.getElementById('quickAddSheet');const backdrop=document.getElementById('quickAddBackdrop');const icon=document.getElementById('quickAddFabIcon');if(sheet.classList.contains('hidden')){sheet.classList.remove('hidden');backdrop.classList.remove('hidden');setTimeout(()=>{sheet.classList.remove('translate-y-full');backdrop.classList.remove('opacity-0');icon.classList.add('rotate-45');},10);}else{sheet.classList.add('translate-y-full');backdrop.classList.add('opacity-0');icon.classList.remove('rotate-45');setTimeout(()=>{sheet.classList.add('hidden');backdrop.classList.add('hidden');},300);}}</script></div><nav class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] pb-safe" data-active-classes="text-primary font-bold"><div class="flex justify-between items-center h-20 px-2 max-w-[440px] mx-auto"><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="academics-hub" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Academics</span></a><div class="flex-1 flex flex-col items-center justify-end h-14 pb-1 pointer-events-none opacity-0"><span class="font-label-sm text-label-sm">Add</span></div><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-map" href="#"><span class="material-symbols-outlined text-[24px]">near_me</span><span class="font-label-sm text-label-sm mt-0.5">Campus</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-14 transition-all active:scale-95 text-primary font-bold" data-path="campus-life" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm mt-0.5">Life</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="student-wellbeing" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm mt-0.5">Wellbeing</span></a></div></nav>
+
+</body></html>

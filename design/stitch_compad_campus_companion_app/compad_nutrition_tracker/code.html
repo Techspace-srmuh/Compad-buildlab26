@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#dae2fd", "background": "#faf8ff", "error-container": "#ffdad6", "secondary-fixed": "#71f8e4", "on-tertiary-fixed": "#2a1700", "on-surface": "#131b2e", "on-secondary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eef0ff", "tertiary": "#5c3800", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed-variant": "#653e00", "surface-bright": "#faf8ff", "on-secondary-container": "#006f64", "surface-container": "#eaedff", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#ffffff", "primary-container": "#3f3ddb", "primary-fixed": "#e1dfff", "on-tertiary-container": "#ffc277", "on-primary-container": "#c9c8ff", "secondary": "#006b5f", "outline-variant": "#c7c4d8", "secondary-fixed-dim": "#4fdbc8", "secondary-container": "#6df5e1", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "on-surface-variant": "#464555", "on-primary-fixed-variant": "#2c26cb", "inverse-primary": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "on-error": "#ffffff", "inverse-surface": "#283044", "primary": "#2319c5", "on-secondary-fixed": "#00201c", "on-primary-fixed": "#08006c", "primary-fixed-dim": "#c1c1ff", "surface-container-low": "#f2f3ff", "surface-container-lowest": "#ffffff", "outline": "#767587", "surface": "#faf8ff", "surface-tint": "#4746e2", "tertiary-container": "#7b4d00", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Compad</span><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80 shadow-sm"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="material-symbols-outlined text-[14px] text-emerald-700">cloud_done</span><span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-emerald-800">Offline Ready</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Emergency SOS" class="h-9 px-3 rounded-full bg-error text-on-error flex items-center justify-center gap-1 shadow-[0_4px_14px_rgba(239,68,68,0.4)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[16px]">sos</span><span class="font-label-sm text-label-sm font-bold">SOS</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-1 ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-28 bg-surface px-margin min-h-screen"><div class="flex flex-col w-full gap-space-md">
+<!-- Top Navigation & Status Context -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Wellbeing</span>
+<span class="material-symbols-outlined text-[12px] opacity-60">chevron_right</span>
+<span class="text-secondary font-bold">Nutrition &amp; Hydration</span>
+</div>
+<div class="flex items-center justify-between gap-space-sm mt-0.5">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Mindful Fuel</h1>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-secondary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="material-symbols-outlined text-[14px]">restaurant_menu</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">Dining Sync Active</span>
+</div>
+</div>
+</div>
+<!-- 1. Daily Fuel & Macro Concentric Rings -->
+<div class="flex flex-col p-4 rounded-[20px] bg-surface-container-low shadow-sm gap-space-md">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Sustained Vitality</span>
+<h2 class="font-title-lg text-title-lg text-on-surface mt-0.5">Energy &amp; Macronutrients</h2>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<!-- Ring Visualization & Legend Grid -->
+<div class="flex items-center gap-4">
+<!-- Concentric SVGs -->
+<div class="relative w-32 h-32 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 120 120">
+<!-- Background tracks -->
+<circle class="text-secondary-container/30" cx="60" cy="60" fill="none" r="50" stroke="currentColor" stroke-width="7"></circle>
+<circle class="text-secondary-container/20" cx="60" cy="60" fill="none" r="39" stroke="currentColor" stroke-width="7"></circle>
+<circle class="text-secondary-container/15" cx="60" cy="60" fill="none" r="28" stroke="currentColor" stroke-width="7"></circle>
+<!-- Outer Ring: Calories (79%) -->
+<circle class="text-secondary transition-all duration-700 ease-out" cx="60" cy="60" fill="none" r="50" stroke="currentColor" stroke-dasharray="314.16" stroke-dashoffset="65.9" stroke-linecap="round" stroke-width="7"></circle>
+<!-- Middle Ring: Protein (76%) -->
+<circle class="text-secondary-fixed-dim transition-all duration-700 ease-out" cx="60" cy="60" fill="none" r="39" stroke="currentColor" stroke-dasharray="245.04" stroke-dashoffset="58.8" stroke-linecap="round" stroke-width="7"></circle>
+<!-- Inner Ring: Hydration/Carbs (75%) -->
+<circle class="text-on-secondary-container transition-all duration-700 ease-out" cx="60" cy="60" fill="none" r="28" stroke="currentColor" stroke-dasharray="175.93" stroke-dashoffset="44.0" stroke-linecap="round" stroke-width="7"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-none">1,740</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">of 2,200</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold text-[9px] uppercase tracking-tighter">kcal</span>
+</div>
+</div>
+<!-- Macro Details -->
+<div class="flex flex-col flex-1 gap-2">
+<div class="flex items-center justify-between p-1.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Protein</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">92g</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 120g</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Carbs</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">180g</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 240g</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-secondary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Healthy Fats</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">54g</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 70g</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mindful Non-Judgmental Validation Banner -->
+<div class="flex items-center gap-2.5 px-3 py-2.5 rounded-2xl bg-secondary-container/20 text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px] text-secondary flex-shrink-0">check_circle</span>
+<p class="font-body-sm text-body-sm leading-snug">
+<span class="font-semibold text-secondary">Balanced replenishment.</span> Energy balance optimal for exam revision &amp; cognitive clarity.
+      </p>
+</div>
+</div>
+<!-- 2. Mindful Hydration Counter -->
+<div class="flex flex-col p-4 rounded-[20px] bg-surface-container-lowest shadow-sm gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface leading-tight">Hydration Rhythm</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Aim for mental stamina</span>
+</div>
+</div>
+<div class="flex items-baseline gap-1 text-secondary">
+<span class="font-headline-sm text-headline-sm font-bold" id="waterCurrent">1,750</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 2,500 mL</span>
+</div>
+</div>
+<!-- Fluid Track Meter -->
+<div class="w-full bg-surface-container h-3.5 rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-secondary rounded-full transition-all duration-500 shadow-sm" id="waterProgress" style="width: 70%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        70% completed
+      </span>
+<span>750 mL remaining</span>
+</div>
+<!-- Quick Add Tap Buttons -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<button class="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-surface-container-low hover:bg-secondary-container/30 active:scale-95 transition-all group" onclick="addWater(250)">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">local_cafe</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">+250 mL</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Cup</span>
+</button>
+<button class="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-secondary-container/20 text-on-secondary-container hover:bg-secondary-container/40 active:scale-95 transition-all group" onclick="addWater(500)">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">water_bottle</span>
+<span class="font-label-md text-label-md text-secondary font-bold mt-1">+500 mL</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Campus Bottle</span>
+</button>
+<button class="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-surface-container-low hover:bg-secondary-container/30 active:scale-95 transition-all group" onclick="addWater(750)">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">sports_bar</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">+750 mL</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Dining Mug</span>
+</button>
+</div>
+</div>
+<!-- 3. Campus Dining Hall Direct Integration -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync_alt</span>
+<h3 class="font-title-md text-title-md text-on-surface">Campus Dining Hall Log</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full font-medium">North &amp; Commons</span>
+</div>
+<!-- Breakfast Item -->
+<div class="flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-surface-container-low flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">breakfast_dining</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-on-surface-variant">Breakfast • North Hall</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface truncate">Greek Yogurt Parfait + Banana</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">380 kcal • 18g Protein</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary flex-shrink-0 ml-2">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span class="font-label-sm text-label-sm font-bold">Logged</span>
+</div>
+</div>
+<!-- Lunch Item with Visual Campus Special Badge -->
+<div class="flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-2xl bg-secondary-container/30 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">lunch_dining</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-secondary">Lunch Special • West Commons</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface truncate">Herb Grilled Chicken &amp; Quinoa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">580 kcal • 42g Protein</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary flex-shrink-0 ml-2">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span class="font-label-sm text-label-sm font-bold">Logged</span>
+</div>
+</div>
+<!-- Dinner Live Suggestion Pull -->
+<div class="flex flex-col p-3.5 rounded-[20px] bg-surface-container-low shadow-sm gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">flare</span>
+          Tonight's Menu Recommendation
+        </span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-2 py-0.5 rounded-full font-bold">Opens 5:00 PM</span>
+</div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Teriyaki Tofu &amp; Warm Brown Rice</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">West Commons Chef Bar • 520 kcal • 22g Protein</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-2xl bg-secondary text-on-secondary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 active:scale-98 transition-transform shadow-sm" id="dinnerLogBtn" onclick="logDinnerSuggestion()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Log to Dinner</span>
+</button>
+</div>
+</div>
+<!-- 4. Quick Custom Food Add / Barcode Scan -->
+<div class="grid grid-cols-2 gap-2.5">
+<button class="flex items-center gap-3 p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm hover:bg-surface-container-low active:scale-98 transition-all text-left">
+<div class="w-10 h-10 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Scan Snack</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Library kiosk barcode</span>
+</div>
+</button>
+<button class="flex items-center gap-3 p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm hover:bg-surface-container-low active:scale-98 transition-all text-left">
+<div class="w-10 h-10 rounded-2xl bg-secondary-container/30 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Quick Custom</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Offline food index</span>
+</div>
+</button>
+</div>
+<!-- 5. Mindful Eating Tip (Delight / Non-Judgmental Human Frame) -->
+<div class="flex items-start gap-3.5 p-4 rounded-[20px] bg-secondary-container/25 text-on-secondary-container">
+<div class="w-9 h-9 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-secondary flex-shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[20px]">laptop_chromebook</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-secondary">Study Break Mindfulness</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Habit</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-0.5 leading-relaxed">
+        Eat away from your laptop screen. A 15-minute unplugged meal improves digestion and reduces study fatigue.
+      </p>
+</div>
+</div>
+<!-- Delight Micro-Interaction Script -->
+<script>
+    let currentWater = 1750;
+    const maxWater = 2500;
+
+    function addWater(amount) {
+      currentWater = Math.min(currentWater + amount, maxWater);
+      const percentage = Math.round((currentWater / maxWater) * 100);
+      
+      const waterEl = document.getElementById('waterCurrent');
+      const progressEl = document.getElementById('waterProgress');
+      
+      if (waterEl) waterEl.textContent = currentWater.toLocaleString();
+      if (progressEl) progressEl.style.width = percentage + '%';
+    }
+
+    function logDinnerSuggestion() {
+      const btn = document.getElementById('dinnerLogBtn');
+      if (btn) {
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done_all</span><span>Logged to Tonight&apos;s Fuel</span>`;
+        btn.classList.remove('bg-secondary');
+        btn.classList.add('bg-secondary-container/60', 'text-secondary', 'pointer-events-none');
+      }
+    }
+  </script>
+</div></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><div class="relative w-full max-w-md mx-auto pointer-events-auto"><div class="absolute -top-6 left-1/2 -translate-x-1/2 z-20"><button aria-label="Quick Add" class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] ring-4 ring-surface flex items-center justify-center transition-transform active:scale-95"><span class="material-symbols-outlined text-[30px]">add</span></button></div><nav class="w-full bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] rounded-t-3xl" data-active-classes="text-secondary font-semibold"><div class="grid grid-cols-5 items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="compad-gamification-study-quests" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-1">Home</span></a><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="academics" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-1">Academics</span></a><div class="flex flex-col items-center justify-end h-14 min-w-[44px] pb-1"><span class="font-label-sm text-label-sm text-on-surface-variant/70">Add</span></div><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="campus" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm mt-1">Campus</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-14 min-w-[44px] transition-colors text-secondary font-semibold" data-path="wellbeing-hub" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm mt-1">Wellbeing</span></a></div></nav></div></div></body></html>

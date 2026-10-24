@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Compad</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "primary-fixed": "#e1dfff", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#08006c", "error-container": "#ffdad6", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "secondary-container": "#6df5e1", "secondary-fixed-dim": "#4fdbc8", "tertiary-fixed": "#ffddb8", "background": "#faf8ff", "on-primary-fixed-variant": "#2c26cb", "outline": "#767587", "surface-tint": "#4746e2", "primary-fixed-dim": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "primary-container": "#3f3ddb", "on-secondary-fixed": "#00201c", "secondary": "#006b5f", "surface": "#faf8ff", "primary": "#2319c5", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f64", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "on-tertiary-container": "#ffc277", "on-surface-variant": "#464555", "on-tertiary": "#ffffff", "surface-variant": "#dae2fd", "tertiary": "#5c3800", "surface-container": "#eaedff", "on-primary-container": "#c9c8ff", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "inverse-primary": "#c1c1ff", "tertiary-container": "#7b4d00", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed": "#71f8e4", "surface-container-high": "#e2e7ff", "outline-variant": "#c7c4d8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Compad Brand Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V8pF8NrWqqjyJJQnFdwZQxwcuT9MNAuF_6-MjuMdk1uGFYWm17ar9qtfMtaecHBprODvQY1y3XBSjvpuhavxiEMXkjiUrYboUBmLqn4SRxl6pvv26jfYC6WmQoa1xrlqGfcA3rAilkRxrtfDi77M8PmM9XwpOc44InJc6nvMa2FPUWybLela84U0toqt9_fR8ZTPUsL6w8UhfdQTFvqVfOP0-NDScQaE-0CsQMFaB1YADSkTm1W5QF3yc"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface truncate">Compad</span><div class="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="material-symbols-outlined text-[13px] leading-none text-secondary">cloud_done</span><span class="font-label-sm text-label-sm leading-none hidden xs:inline">Offline Ready</span></div></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Academics Hub</span></div></div><div class="flex items-center gap-1.5 flex-shrink-0"><button aria-label="Search campus resources" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors active:scale-95"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Campus Emergency SOS" class="h-9 px-2.5 flex items-center justify-center gap-1 rounded-full bg-error text-on-error shadow-[0_2px_8px_rgba(186,26,26,0.35)] active:scale-95 transition-transform" data-path="sos-emergency" href="#"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-sm text-label-sm tracking-wider uppercase font-bold">SOS</span></a><a aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 active:scale-95 transition-transform" data-path="student-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.12)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Mf6WF0AkTSFIQQ8HyZ1mfLDe2FOZAsnmxjPehYOGz9xeWj5bapau8GqJr-B2kSC4mmuK8ZC9KbHEXQjjxnvgAUT18uDmSrbl7oavXLyQmiUgqSIOtUZam0L1sTxp1SWk0Zmc4R8TW0aZUC221epj4xyWS1LNAjuO-4Wuo0xYHZTtX1cfRRrJVkHjcNucSpU4LCxyHSw3lSjsRw2Cn0Yi3hpCswJIpWw6NXeh_qMoMnOZcfeGHcXl"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-14 pb-28 bg-surface"><div class="flex flex-col w-full gap-space-md">
+<!-- Top Navigation & Action Row -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Academics</span>
+<span class="material-symbols-outlined text-outline text-[14px]">chevron_right</span>
+<span class="font-label-lg text-label-lg text-primary truncate">Alerts &amp; Reminders</span>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="px-2.5 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-variant active:scale-95 transition-all text-on-surface flex items-center gap-1" id="markReadBtn">
+<span class="material-symbols-outlined text-[16px] text-primary">done_all</span>
+<span class="font-label-sm text-label-sm">Mark read</span>
+</button>
+<button aria-label="Notification Preferences" class="w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-variant active:scale-95 flex items-center justify-center text-on-surface-variant transition-all" id="settingsToggleBtn">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Offline Dispatch Guarantee Banner -->
+<div class="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl bg-secondary-container/40 text-on-secondary-container">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-secondary-container font-semibold truncate">Hardware Real-Time Dispatch</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container/85 line-clamp-1">Push alerts &amp; commute timers fire locally without Wi-Fi or cellular</span>
+</div>
+</div>
+<!-- Hero Smart Departure Card -->
+<div class="relative overflow-hidden rounded-[20px] bg-gradient-to-br from-tertiary-fixed/70 via-surface-container-high to-secondary-fixed/40 p-space-md shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/20 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">directions_walk</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">Leave Now for Class</span>
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold tracking-wide uppercase">CS 301 • Turing Hall 304B</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm shadow-xs flex-shrink-0">
+          In 18 mins
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+        Lecture commences in <strong class="text-on-surface font-semibold">18 mins</strong>. Walk estimate is <strong class="text-on-surface font-semibold">6 mins</strong> from your location at Memorial Fountain. Gentle rain arriving in 10 mins.
+      </p>
+<div class="flex items-center gap-2 pt-1">
+<a class="flex-1 h-11 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(35,25,197,0.3)] active:scale-98 transition-transform" data-path="campus-map" href="#">
+<span class="material-symbols-outlined text-[18px]">turn_sharp_right</span>
+<span>Open Wayfind Map</span>
+</a>
+<button aria-label="Snooze 5 mins" class="h-11 px-3.5 rounded-xl bg-surface-container-lowest/80 text-on-surface font-label-md text-label-md hover:bg-surface-container-lowest active:scale-95 transition-all flex items-center gap-1" id="snoozeAlertBtn">
+<span class="material-symbols-outlined text-[18px] text-outline">snooze</span>
+<span>5m</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Feed: Today -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="font-title-sm font-headline-sm text-title-lg text-on-surface font-bold">Today</span>
+<span class="px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">3 New</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Updated just now</span>
+</div>
+<!-- Notification Item 1: Raft Assignment -->
+<div class="feed-item rounded-[20px] bg-surface-container-low p-3.5 flex items-start gap-3 transition-all hover:bg-surface-container active:scale-[0.99] shadow-xs">
+<div class="w-10 h-10 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">assignment_late</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-bold">Due in 2 days</span>
+<span class="font-body-sm text-body-sm text-outline">09:41 AM</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Distributed Systems: Raft Consensus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+          Leader election checkpoint and unit tests suite must pass on campus testbed server.
+        </p>
+<div class="flex items-center gap-2 mt-2">
+<button class="px-3 py-1 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm active:scale-95 transition-all">View Rubric</button>
+<button class="px-3 py-1 rounded-lg bg-primary-fixed/60 text-on-primary-fixed-variant font-label-sm text-label-sm active:scale-95 transition-all">Set Study Sprint</button>
+</div>
+</div>
+</div>
+<!-- Notification Item 2: TA Office Hours -->
+<div class="feed-item rounded-[20px] bg-surface-container-low p-3.5 flex items-start gap-3 transition-all hover:bg-surface-container active:scale-[0.99] shadow-xs">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">Confirmed</span>
+<span class="font-body-sm text-body-sm text-outline">08:15 AM</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">1-on-1 Office Hours with Marcus Chen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+          Slot secured today at 4:00 PM • Soda Hall Alcove 3. Bring trace tables.
+        </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">event_available</span> Synced to timetable
+          </span>
+</div>
+</div>
+</div>
+<!-- Notification Item 3: Flashcard Recall -->
+<div class="feed-item rounded-[20px] bg-surface-container-low p-3.5 flex items-start gap-3 transition-all hover:bg-surface-container active:scale-[0.99] shadow-xs">
+<div class="w-10 h-10 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">style</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed-dim text-on-primary-fixed-variant font-bold">Spaced Recall</span>
+<span class="font-body-sm text-body-sm text-outline">07:00 AM</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">CS 301 Memory Deck: 18 Cards Due</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+          Maintain your 6-day retention curve before Turing Hall lecture.
+        </p>
+<div class="flex items-center gap-2 mt-2">
+<button class="px-3 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm active:scale-95 transition-all">Start 4m Sprint</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Feed: Upcoming -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-title-sm font-headline-sm text-title-lg text-on-surface font-bold">Upcoming</span>
+<span class="font-label-sm text-label-sm text-outline">This Week</span>
+</div>
+<!-- Upcoming Item 1: Drop Deadline Warning -->
+<div class="feed-item rounded-[20px] bg-surface-container-low p-3.5 flex items-start gap-3 transition-all hover:bg-surface-container active:scale-[0.99] shadow-xs">
+<div class="w-10 h-10 rounded-2xl bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error text-on-error font-bold uppercase tracking-wider">Critical</span>
+<span class="font-body-sm text-body-sm text-outline">Tomorrow</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">Academic Drop Deadline (No W)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+          Registrar lock takes effect tomorrow at 11:59 PM. Advisor sign-off required for unit changes.
+        </p>
+</div>
+</div>
+<!-- Upcoming Item 2: Past Paper Added -->
+<div class="feed-item rounded-[20px] bg-surface-container-low p-3.5 flex items-start gap-3 transition-all hover:bg-surface-container active:scale-[0.99] shadow-xs">
+<div class="w-10 h-10 rounded-2xl bg-surface-variant text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">library_books</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-medium">New Resource</span>
+<span class="font-body-sm text-body-sm text-outline">Yesterday</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold truncate">2023 MATH 241 Exam Solutions Uploaded</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+          Linear Algebra TA cohort added step-by-step eigenbasis proofs.
+        </p>
+</div>
+</div>
+</div>
+<!-- Notification Settings Drawer / In-Screen Panel -->
+<div class="rounded-[20px] bg-surface-container p-space-md flex flex-col gap-space-md shadow-xs transition-all" id="settingsPanel">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Alert Preferences</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Device triggers &amp; quiet schedules</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-semibold">Local engine</span>
+</div>
+<!-- Toggle Controls List -->
+<div class="flex flex-col gap-2.5">
+<!-- Toggle 1 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-primary">navigation</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Class Departure Alarms</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">GPS-aware dynamic travel alerts</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-tertiary">notification_important</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Deadlines &amp; Due Dates</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">48h and 6h assignment countdowns</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 3 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-secondary">grade</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Grade Updates</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">New score postings &amp; quiz feedbacks</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 4 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-primary">groups</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Office Hours &amp; TA Queues</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Slot confirmations &amp; room changes</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Quiet Hours Schedule Banner -->
+<div class="p-3.5 rounded-xl bg-surface-container-highest flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">bedtime</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Quiet Hours Schedule</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Do Not Disturb during Study Focus &amp; Sleep (<strong class="text-on-surface font-semibold">11:00 PM – 07:30 AM</strong>). High-priority departure alarms remain enabled.
+        </p>
+</div>
+</div>
+</div>
+<!-- Micro-interaction feedback toast -->
+<div class="opacity-0 pointer-events-none transition-opacity duration-300 p-2.5 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-md" id="toastMessage">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span>
+<span id="toastText">All alerts marked as read</span>
+</div>
+</div>
+<script>
+  // Mark all read micro-interaction
+  const markReadBtn = document.getElementById('markReadBtn');
+  const toastMessage = document.getElementById('toastMessage');
+  const toastText = document.getElementById('toastText');
+  const feedItems = document.querySelectorAll('.feed-item');
+
+  function showToast(text) {
+    if (!toastMessage || !toastText) return;
+    toastText.textContent = text;
+    toastMessage.classList.remove('opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      toastMessage.classList.add('opacity-0', 'pointer-events-none');
+    }, 2200);
+  }
+
+  if (markReadBtn) {
+    markReadBtn.addEventListener('click', () => {
+      feedItems.forEach(card => {
+        card.classList.remove('bg-surface-container-low');
+        card.classList.add('bg-surface-container-lowest', 'opacity-85');
+      });
+      showToast('All academic notifications cleared & marked as read');
+    });
+  }
+
+  // Snooze departure alert
+  const snoozeAlertBtn = document.getElementById('snoozeAlertBtn');
+  if (snoozeAlertBtn) {
+    snoozeAlertBtn.addEventListener('click', () => {
+      snoozeAlertBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-secondary">check</span> Snoozed';
+      showToast('Departure alarm deferred for 5 minutes');
+    });
+  }
+
+  // Quick jump to settings panel
+  const settingsToggleBtn = document.getElementById('settingsToggleBtn');
+  const settingsPanel = document.getElementById('settingsPanel');
+  if (settingsToggleBtn && settingsPanel) {
+    settingsToggleBtn.addEventListener('click', () => {
+      settingsPanel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      settingsPanel.classList.add('ring-2', 'ring-primary/40');
+      setTimeout(() => {
+        settingsPanel.classList.remove('ring-2', 'ring-primary/40');
+      }, 1500);
+    });
+  }
+</script></main><div class="fixed bottom-0 inset-x-0 z-50 pointer-events-none"><div class="relative max-w-[440px] mx-auto"><div class="absolute left-1/2 -top-6 -translate-x-1/2 pointer-events-auto z-20"><button aria-label="Quick Add Note, Task or Mood" class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] p-0.5 active:scale-95 transition-transform ring-4 ring-surface"><span class="material-symbols-outlined text-[30px]">add</span></button></div></div></div><nav class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] pb-safe" data-active-classes="text-primary font-bold"><div class="flex justify-between items-center h-20 px-2 max-w-[440px] mx-auto"><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="academics-hub" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Academics</span></a><div class="flex-1 flex flex-col items-center justify-end h-14 pb-1 pointer-events-none opacity-0"><span class="font-label-sm text-label-sm">Add</span></div><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-map" href="#"><span class="material-symbols-outlined text-[24px]">near_me</span><span class="font-label-sm text-label-sm mt-0.5">Campus</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-life" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm mt-0.5">Life</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="student-wellbeing" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm mt-0.5">Wellbeing</span></a></div></nav></body></html>

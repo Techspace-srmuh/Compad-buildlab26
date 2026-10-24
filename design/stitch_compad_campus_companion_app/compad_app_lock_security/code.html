@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#dae2fd", "background": "#faf8ff", "error-container": "#ffdad6", "secondary-fixed": "#71f8e4", "on-tertiary-fixed": "#2a1700", "on-surface": "#131b2e", "on-secondary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eef0ff", "tertiary": "#5c3800", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed-variant": "#653e00", "surface-bright": "#faf8ff", "on-secondary-container": "#006f64", "surface-container": "#eaedff", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#ffffff", "primary-container": "#3f3ddb", "primary-fixed": "#e1dfff", "on-tertiary-container": "#ffc277", "on-primary-container": "#c9c8ff", "secondary": "#006b5f", "outline-variant": "#c7c4d8", "secondary-fixed-dim": "#4fdbc8", "secondary-container": "#6df5e1", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "on-surface-variant": "#464555", "on-primary-fixed-variant": "#2c26cb", "inverse-primary": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "on-error": "#ffffff", "inverse-surface": "#283044", "primary": "#2319c5", "on-secondary-fixed": "#00201c", "on-primary-fixed": "#08006c", "primary-fixed-dim": "#c1c1ff", "surface-container-low": "#f2f3ff", "surface-container-lowest": "#ffffff", "outline": "#767587", "surface": "#faf8ff", "surface-tint": "#4746e2", "tertiary-container": "#7b4d00", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Compad</span><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80 shadow-sm"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="material-symbols-outlined text-[14px] text-emerald-700">cloud_done</span><span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-emerald-800">Offline Ready</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Emergency SOS" class="h-9 px-3 rounded-full bg-error text-on-error flex items-center justify-center gap-1 shadow-[0_4px_14px_rgba(239,68,68,0.4)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[16px]">sos</span><span class="font-label-sm text-label-sm font-bold">SOS</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-1 ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-28 bg-surface px-margin min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Breadcrumb & Header Title -->
+<div class="flex flex-col gap-1 mb-4 pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_back_ios_new</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Settings &gt; Security &amp; Privacy</span>
+</div>
+<div class="flex items-center justify-between">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">App Lock &amp; Enclave</h1>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1 font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+        Enclave On
+      </span>
+</div>
+</div>
+<!-- Hero Card: Active Biometric & PIN Simulation -->
+<div class="w-full rounded-2xl bg-surface-container-low shadow-sm p-4 mb-5 flex flex-col items-center relative overflow-hidden">
+<!-- Ambient decorative light glow behind shield -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+<!-- Secure Hardware Enclave Status Banner -->
+<div class="w-full flex items-center justify-between bg-surface-container-lowest px-3 py-2 rounded-xl mb-4 shadow-sm z-10">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_2px_8px_rgba(63,61,219,0.3)]">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Hardware Secure Enclave</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Biometrics: Face ID Synced</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        Active
+      </div>
+</div>
+<!-- Interactive Keypad Simulation Display -->
+<div class="flex flex-col items-center z-10 w-full max-w-[280px]">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center mb-2 shadow-md">
+<span class="material-symbols-outlined text-[26px]">shield_person</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-bold">Verify Master PIN</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mb-3">Touch sensor or enter your master campus passcode</p>
+<!-- 4-digit Stealth Dots (3 filled, 1 pending) -->
+<div class="flex items-center justify-center gap-3.5 mb-4 py-1" id="pin-dots">
+<div class="w-3.5 h-3.5 rounded-full bg-primary shadow-sm ring-2 ring-primary/20"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-primary shadow-sm ring-2 ring-primary/20"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-primary shadow-sm ring-2 ring-primary/20"></div>
+<div class="w-3.5 h-3.5 rounded-full bg-surface-container-highest animate-pulse"></div>
+</div>
+<!-- Tactile Mini Keypad -->
+<div class="grid grid-cols-3 gap-2 w-full mb-3">
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">1</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">2</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">3</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">4</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">5</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">6</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">7</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">8</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">9</button>
+<!-- Face ID Trigger Button -->
+<button aria-label="Trigger Face ID" class="h-11 rounded-xl bg-surface-container text-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform" id="faceid-trigger" type="button">
+<span class="material-symbols-outlined text-[22px]">face</span>
+</button>
+<button class="keypad-btn h-11 rounded-xl bg-surface-container-lowest text-on-surface font-title-lg text-title-lg flex items-center justify-center shadow-sm active:scale-95 transition-transform active:bg-surface-container" type="button">0</button>
+<!-- Backspace / Delete -->
+<button aria-label="Backspace" class="h-11 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center shadow-sm active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+</div>
+<!-- Change Master PIN Link -->
+<button class="font-label-md text-label-md text-primary font-bold hover:underline py-1 flex items-center gap-1 active:opacity-80" type="button">
+<span class="material-symbols-outlined text-[16px]">key</span>
+        Change 6-digit Master PIN
+      </button>
+</div>
+</div>
+<!-- Protected App Zones Section -->
+<div class="flex flex-col mb-5">
+<div class="flex flex-col mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">security</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Protected App Zones</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Require PIN or Face ID to open sensitive tabs on your device</p>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item 1: Notes -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Shared &amp; Private Notes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Voice recordings, study diaries, audio transcripts</span>
+</div>
+</div>
+<button aria-checked="true" class="zone-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Item 2: Mood Journal -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center flex-shrink-0 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Mood Journal &amp; Mental Balance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Daily emotional pulse, reflections, stress tracker</span>
+</div>
+</div>
+<button aria-checked="true" class="zone-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Item 3: Counseling -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center flex-shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Counseling &amp; Crisis Appointments</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Confidential student health &amp; clinical notes</span>
+</div>
+</div>
+<button aria-checked="true" class="zone-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Item 4: Vault -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Credentials &amp; Achievements Vault</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Official transcripts, student IDs, certificates</span>
+</div>
+</div>
+<button aria-checked="true" class="zone-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Item 5: Health & Nutrition (OFF) -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex items-center justify-center flex-shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Personal Health &amp; Nutrition</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Confidential calorie tracker &amp; meal plans</span>
+</div>
+</div>
+<button aria-checked="false" class="zone-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-surface-variant p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button">
+<span class="translate-x-0 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Security Timing & Behavior Settings -->
+<div class="flex flex-col mb-4">
+<div class="flex items-center gap-1.5 mb-2.5">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Lock Timing &amp; Stealth Behavior</h2>
+</div>
+<!-- Auto-Lock Timeout Chips -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm mb-3">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Auto-Lock Timeout</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Strict</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Instantly relocks sensitive zones when leaving view</p>
+<!-- Interactive Segmented Selector -->
+<div class="grid grid-cols-2 gap-2" id="timeout-group">
+<button class="timeout-chip h-9 px-3 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shadow-sm" type="button">
+          Immediately
+        </button>
+<button class="timeout-chip h-9 px-3 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">
+          After 1 min
+        </button>
+<button class="timeout-chip h-9 px-3 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">
+          After 5 min
+        </button>
+<button class="timeout-chip h-9 px-3 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center" type="button">
+          When Switching
+        </button>
+</div>
+</div>
+<!-- Disguise in App Switcher -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm mb-3 flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">visibility_off</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Disguise in Multitask View</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Blurs screen preview in iOS / Android multitask carousel to protect private data from shoulder-surfers.</p>
+</div>
+<button aria-checked="true" class="zone-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-md ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<!-- Duress PIN / Panic Wipe Option -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-error-container text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">emergency_home</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Duress Decoy PIN</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wide">Emergency Safeguard</span>
+</div>
+</div>
+<button class="h-8 px-3 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-transform" type="button">
+          Configure
+        </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container-lowest/80 p-2.5 rounded-xl">
+        Entering an alternate decoy PIN silently launches a generic guest profile without private logs, transcripts, or crisis records.
+      </p>
+</div>
+</div>
+<!-- Client-side Interactive Behavior -->
+<script>
+    // Zone and Feature Toggle Handlers
+    document.querySelectorAll('.zone-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const isChecked = button.getAttribute('aria-checked') === 'true';
+        const nextState = !isChecked;
+        button.setAttribute('aria-checked', String(nextState));
+        const indicator = button.querySelector('span');
+
+        if (nextState) {
+          button.classList.remove('bg-surface-variant');
+          button.classList.add('bg-primary-container');
+          indicator.classList.remove('translate-x-0');
+          indicator.classList.add('translate-x-5');
+        } else {
+          button.classList.remove('bg-primary-container');
+          button.classList.add('bg-surface-variant');
+          indicator.classList.remove('translate-x-5');
+          indicator.classList.add('translate-x-0');
+        }
+      });
+    });
+
+    // Auto-Lock Timeout Chip Selector
+    const timeoutButtons = document.querySelectorAll('.timeout-chip');
+    timeoutButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        timeoutButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // Tactile Keypad Micro-Animation
+    const keypadButtons = document.querySelectorAll('.keypad-btn');
+    keypadButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const dots = document.getElementById('pin-dots');
+        dots.classList.add('scale-105');
+        setTimeout(() => dots.classList.remove('scale-105'), 150);
+      });
+    });
+
+    // Face ID Trigger Micro-Feedback
+    const faceIdBtn = document.getElementById('faceid-trigger');
+    if (faceIdBtn) {
+      faceIdBtn.addEventListener('click', () => {
+        faceIdBtn.classList.add('bg-secondary-fixed');
+        setTimeout(() => {
+          faceIdBtn.classList.remove('bg-secondary-fixed');
+        }, 300);
+      });
+    }
+  </script>
+</div></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><div class="relative w-full max-w-md mx-auto pointer-events-auto"><div class="absolute -top-6 left-1/2 -translate-x-1/2 z-20"><button aria-label="Quick Add" class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] ring-4 ring-surface flex items-center justify-center transition-transform active:scale-95"><span class="material-symbols-outlined text-[30px]">add</span></button></div><nav class="w-full bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] rounded-t-3xl" data-active-classes="text-secondary font-semibold"><div class="grid grid-cols-5 items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="compad-gamification-study-quests" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-1">Home</span></a><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="academics" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-1">Academics</span></a><div class="flex flex-col items-center justify-end h-14 min-w-[44px] pb-1"><span class="font-label-sm text-label-sm text-on-surface-variant/70">Add</span></div><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="campus" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm mt-1">Campus</span></a><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="wellbeing-hub" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm mt-1">Wellbeing</span></a></div></nav></div></div></body></html>

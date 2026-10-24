@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#dae2fd", "background": "#faf8ff", "error-container": "#ffdad6", "secondary-fixed": "#71f8e4", "on-tertiary-fixed": "#2a1700", "on-surface": "#131b2e", "on-secondary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eef0ff", "tertiary": "#5c3800", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed-variant": "#653e00", "surface-bright": "#faf8ff", "on-secondary-container": "#006f64", "surface-container": "#eaedff", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#ffffff", "primary-container": "#3f3ddb", "primary-fixed": "#e1dfff", "on-tertiary-container": "#ffc277", "on-primary-container": "#c9c8ff", "secondary": "#006b5f", "outline-variant": "#c7c4d8", "secondary-fixed-dim": "#4fdbc8", "secondary-container": "#6df5e1", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "on-surface-variant": "#464555", "on-primary-fixed-variant": "#2c26cb", "inverse-primary": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "on-error": "#ffffff", "inverse-surface": "#283044", "primary": "#2319c5", "on-secondary-fixed": "#00201c", "on-primary-fixed": "#08006c", "primary-fixed-dim": "#c1c1ff", "surface-container-low": "#f2f3ff", "surface-container-lowest": "#ffffff", "outline": "#767587", "surface": "#faf8ff", "surface-tint": "#4746e2", "tertiary-container": "#7b4d00", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Compad</span><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80 shadow-sm"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="material-symbols-outlined text-[14px] text-emerald-700">cloud_done</span><span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-emerald-800">Offline Ready</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Emergency SOS" class="h-9 px-3 rounded-full bg-error text-on-error flex items-center justify-center gap-1 shadow-[0_4px_14px_rgba(239,68,68,0.4)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[16px]">sos</span><span class="font-label-sm text-label-sm font-bold">SOS</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-1 ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-28 bg-surface px-margin min-h-screen"><div class="flex flex-col w-full gap-space-lg select-none">
+<!-- Header / Breadcrumb Context -->
+<div class="flex flex-col gap-space-xs mt-2">
+<div class="flex items-center justify-between">
+<nav class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm tracking-wide uppercase">
+<span>Wellbeing</span>
+<span class="material-symbols-outlined text-[12px] opacity-60">chevron_right</span>
+<span class="text-secondary font-bold">Meditation</span>
+</nav>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[13px]">offline_pin</span>
+<span class="font-label-sm text-label-sm font-semibold">100% Offline Audio</span>
+</div>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Guided Breathing &amp; Grounding</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Calm the nervous system before lectures or quiet study.</p>
+</div>
+<!-- Hero Breathing Canvas / Orb Card -->
+<div class="relative w-full overflow-hidden rounded-[20px] bg-secondary-container/20 p-6 flex flex-col items-center justify-center text-center shadow-sm">
+<!-- Ambient organic gradient background -->
+<div class="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-secondary-container/60 blur-3xl pointer-events-none"></div>
+<!-- Breathing Orb with Concentric Ripples -->
+<div class="relative w-64 h-64 flex items-center justify-center my-2">
+<!-- Outer Ripple 2 -->
+<div class="absolute w-60 h-60 rounded-full bg-secondary/10 scale-95 transition-all duration-1000 ease-in-out opacity-40" id="orb-ring-outer"></div>
+<!-- Outer Ripple 1 -->
+<div class="absolute w-48 h-48 rounded-full bg-secondary-container/50 scale-95 transition-all duration-1000 ease-in-out opacity-60" id="orb-ring-mid"></div>
+<!-- Core Breathing Sphere -->
+<div class="relative w-36 h-36 rounded-full bg-gradient-to-tr from-secondary/80 to-secondary-fixed flex flex-col items-center justify-center shadow-lg transition-transform duration-1000 ease-in-out cursor-pointer active:scale-95" id="orb-core">
+<span class="font-title-lg text-title-lg text-on-secondary font-bold tracking-wide" id="breathing-phase">Inhale</span>
+<span class="font-label-sm text-label-sm text-on-secondary/80 mt-0.5" id="breathing-timer">4s</span>
+</div>
+</div>
+<!-- Phase Guidance Microcopy -->
+<div class="relative z-10 flex flex-col items-center gap-1 max-w-xs mt-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px] animate-spin" style="animation-duration: 6s;">spa</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Box Technique Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium" id="breathing-subtext">Focus on the steady expansion. Relax your shoulders.</p>
+</div>
+<!-- Live Pace Bar Tracker -->
+<div class="w-40 h-1.5 bg-surface-container rounded-full overflow-hidden mt-4">
+<div class="h-full bg-secondary w-1/4 rounded-full transition-all duration-500" id="pace-progress"></div>
+</div>
+</div>
+<!-- Session Length Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Session Length</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended: 3 min</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="time-chip group relative flex items-center justify-between px-3.5 py-2.5 rounded-[14px] bg-secondary text-on-secondary shadow-sm text-left transition-all" data-duration="60">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold">1 min</span>
+<span class="font-label-sm text-label-sm opacity-90">Quick Reset</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</button>
+<button class="time-chip group relative flex items-center justify-between px-3.5 py-2.5 rounded-[14px] bg-surface-container-low text-on-surface shadow-sm text-left hover:bg-surface-container transition-all" data-duration="180">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold">3 min</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Class Break</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">coffee</span>
+</button>
+<button class="time-chip group relative flex items-center justify-between px-3.5 py-2.5 rounded-[14px] bg-surface-container-low text-on-surface shadow-sm text-left hover:bg-surface-container transition-all" data-duration="300">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold">5 min</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deep Calm</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">self_improvement</span>
+</button>
+<button class="time-chip group relative flex items-center justify-between px-3.5 py-2.5 rounded-[14px] bg-surface-container-low text-on-surface shadow-sm text-left hover:bg-surface-container transition-all" data-duration="600">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold">10 min</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pre-Exam</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">school</span>
+</button>
+</div>
+</div>
+<!-- Breathing Pattern Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Breathing Rhythm</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Vagus Stimulation</span>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-1 -mx-margin px-margin">
+<button class="pattern-pill shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-full bg-secondary-container text-on-secondary-container shadow-sm transition-all" data-pattern="box">
+<span class="material-symbols-outlined text-[16px]">crop_square</span>
+<span class="font-label-md text-label-md font-bold">Box 4-4-4-4</span>
+</button>
+<button class="pattern-pill shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-full bg-surface-container text-on-surface-variant transition-all hover:bg-surface-container-high" data-pattern="478">
+<span class="material-symbols-outlined text-[16px]">bedtime</span>
+<span class="font-label-md text-label-md font-medium">4-7-8 Sleep Breath</span>
+</button>
+<button class="pattern-pill shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-full bg-surface-container text-on-surface-variant transition-all hover:bg-surface-container-high" data-pattern="resonance">
+<span class="material-symbols-outlined text-[16px]">waves</span>
+<span class="font-label-md text-label-md font-medium">Calm Resonance 5-5</span>
+</button>
+</div>
+</div>
+<!-- Thumb Zone Primary Controls -->
+<div class="flex items-center gap-3 pt-1">
+<button class="flex-1 h-14 rounded-[16px] bg-secondary text-on-secondary shadow-md flex items-center justify-center gap-2.5 active:scale-[0.98] transition-transform" id="main-play-btn">
+<span class="material-symbols-outlined text-[24px]" id="play-icon">play_arrow</span>
+<span class="font-label-lg text-label-lg font-bold" id="play-text">Start Breathing Session</span>
+</button>
+<button aria-label="Reset Session" class="w-14 h-14 rounded-[16px] bg-surface-container-low text-on-surface-variant flex items-center justify-center shadow-sm active:scale-95 transition-all hover:text-on-surface" id="reset-btn">
+<span class="material-symbols-outlined text-[22px]">replay</span>
+</button>
+<button aria-label="Toggle Singing Bell Chime" class="w-14 h-14 rounded-[16px] bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm active:scale-95 transition-all" id="mute-btn">
+<span class="material-symbols-outlined text-[22px]" id="mute-icon">notifications_active</span>
+</button>
+</div>
+<!-- Downloaded Soundscapes List -->
+<div class="flex flex-col gap-space-xs mt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Ambient Soundscapes</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">4 Cached</span>
+</div>
+<button class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+        Manage Cache
+      </button>
+</div>
+<!-- Track List Bento / Column -->
+<div class="flex flex-col gap-2.5">
+<!-- Item 1 -->
+<div class="sound-card flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-playing="false">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-[14px] bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">forest</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Campus Quad Morning Birds</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">3.2 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Cached
+              </span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="sound-card flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-playing="false">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-[14px] bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">rainy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Gentle Rain on Library Skylight</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">4.1 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Cached
+              </span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="sound-card flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-playing="false">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-[14px] bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">music_note</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Soft Tibetan Singing Bowl</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.8 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Cached
+              </span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+<!-- Item 4 -->
+<div class="sound-card flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow cursor-pointer" data-playing="false">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-[14px] bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">White Noise for Focus</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1.9 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Cached
+              </span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Grounding Micro-Tip Card -->
+<div class="rounded-[20px] bg-surface-container-low p-4 flex items-start gap-3 shadow-sm mb-4">
+<div class="p-2 rounded-full bg-secondary-container text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Post-Session Grounding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Anchor yourself using 5-4-3-2-1: notice five things you see, four you can touch, and three you can hear before stepping back into study.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  (function initBreathingSanctuary() {
+    let isRunning = false;
+    let timerId = null;
+    let stepTimerId = null;
+    let currentStepIndex = 0;
+    let currentSecondsInStep = 0;
+    let chimeEnabled = true;
+
+    // Pattern configs
+    const patterns = {
+      box: [
+        { label: "Inhale", duration: 4, tip: "Expand belly & chest gently.", scale: "scale-125" },
+        { label: "Hold", duration: 4, tip: "Keep posture tall and still.", scale: "scale-125" },
+        { label: "Exhale", duration: 4, tip: "Release softly through lips.", scale: "scale-90" },
+        { label: "Rest", duration: 4, tip: "Relax your shoulders completely.", scale: "scale-90" }
+      ],
+      "478": [
+        { label: "Inhale", duration: 4, tip: "Breathe quietly through nose.", scale: "scale-125" },
+        { label: "Hold", duration: 7, tip: "Gently hold your calm center.", scale: "scale-125" },
+        { label: "Exhale", duration: 8, tip: "Exhale fully with whoosh sound.", scale: "scale-90" }
+      ],
+      resonance: [
+        { label: "Inhale", duration: 5, tip: "Slow gentle 5-second breath in.", scale: "scale-120" },
+        { label: "Exhale", duration: 5, tip: "Harmonize heartbeat & 5-second breath out.", scale: "scale-90" }
+      ]
+    };
+
+    let activePatternKey = 'box';
+
+    const orbCore = document.getElementById('orb-core');
+    const orbRingMid = document.getElementById('orb-ring-mid');
+    const orbRingOuter = document.getElementById('orb-ring-outer');
+    const phaseLabel = document.getElementById('breathing-phase');
+    const timerLabel = document.getElementById('breathing-timer');
+    const subtextLabel = document.getElementById('breathing-subtext');
+    const playBtn = document.getElementById('main-play-btn');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+    const resetBtn = document.getElementById('reset-btn');
+    const muteBtn = document.getElementById('mute-btn');
+    const muteIcon = document.getElementById('mute-icon');
+    const paceProgress = document.getElementById('pace-progress');
+
+    function applyOrbAnimation(scaleClass, isHold) {
+      orbCore.className = "relative w-36 h-36 rounded-full bg-gradient-to-tr from-secondary/80 to-secondary-fixed flex flex-col items-center justify-center shadow-lg transition-transform duration-1000 ease-in-out cursor-pointer active:scale-95 " + scaleClass;
+      if (scaleClass.includes('125') || scaleClass.includes('120')) {
+        orbRingMid.classList.add('scale-125', 'opacity-80');
+        orbRingOuter.classList.add('scale-125', 'opacity-60');
+      } else {
+        orbRingMid.classList.remove('scale-125', 'opacity-80');
+        orbRingOuter.classList.remove('scale-125', 'opacity-60');
+      }
+    }
+
+    function renderStep() {
+      const currentList = patterns[activePatternKey];
+      const step = currentList[currentStepIndex];
+      phaseLabel.textContent = step.label;
+      const remainingSec = step.duration - currentSecondsInStep;
+      timerLabel.textContent = remainingSec + "s";
+      subtextLabel.textContent = step.tip;
+      applyOrbAnimation(step.scale, step.label === "Hold" || step.label === "Rest");
+
+      // Progress within cycle
+      const totalSteps = currentList.length;
+      const progressRatio = ((currentStepIndex + (currentSecondsInStep / step.duration)) / totalSteps) * 100;
+      paceProgress.style.width = Math.min(100, Math.max(10, progressRatio)) + '%';
+    }
+
+    function tick() {
+      const currentList = patterns[activePatternKey];
+      const step = currentList[currentStepIndex];
+      currentSecondsInStep++;
+      if (currentSecondsInStep >= step.duration) {
+        currentSecondsInStep = 0;
+        currentStepIndex = (currentStepIndex + 1) % currentList.length;
+        if (chimeEnabled && navigator.vibrate) {
+          navigator.vibrate(40);
+        }
+      }
+      renderStep();
+    }
+
+    function startBreathing() {
+      isRunning = true;
+      playIcon.textContent = "pause";
+      playText.textContent = "Pause Session";
+      stepTimerId = setInterval(tick, 1000);
+      renderStep();
+    }
+
+    function pauseBreathing() {
+      isRunning = false;
+      playIcon.textContent = "play_arrow";
+      playText.textContent = "Resume Session";
+      clearInterval(stepTimerId);
+    }
+
+    function resetBreathing() {
+      pauseBreathing();
+      currentStepIndex = 0;
+      currentSecondsInStep = 0;
+      playText.textContent = "Start Breathing Session";
+      renderStep();
+      paceProgress.style.width = '25%';
+      orbCore.className = "relative w-36 h-36 rounded-full bg-gradient-to-tr from-secondary/80 to-secondary-fixed flex flex-col items-center justify-center shadow-lg transition-transform duration-1000 ease-in-out cursor-pointer active:scale-95 scale-100";
+    }
+
+    playBtn.addEventListener('click', () => {
+      if (!isRunning) startBreathing();
+      else pauseBreathing();
+    });
+
+    resetBtn.addEventListener('click', resetBreathing);
+
+    muteBtn.addEventListener('click', () => {
+      chimeEnabled = !chimeEnabled;
+      if (chimeEnabled) {
+        muteIcon.textContent = "notifications_active";
+        muteBtn.classList.replace('bg-surface-container', 'bg-secondary-container');
+        muteBtn.classList.replace('text-on-surface-variant', 'text-on-secondary-container');
+      } else {
+        muteIcon.textContent = "notifications_off";
+        muteBtn.classList.replace('bg-secondary-container', 'bg-surface-container');
+        muteBtn.classList.replace('text-on-secondary-container', 'text-on-surface-variant');
+      }
+    });
+
+    // Time chip selection
+    const timeChips = document.querySelectorAll('.time-chip');
+    timeChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        timeChips.forEach(c => {
+          c.classList.replace('bg-secondary', 'bg-surface-container-low');
+          c.classList.replace('text-on-secondary', 'text-on-surface');
+        });
+        chip.classList.replace('bg-surface-container-low', 'bg-secondary');
+        chip.classList.replace('text-on-surface', 'text-on-secondary');
+        resetBreathing();
+      });
+    });
+
+    // Pattern toggles
+    const patternPills = document.querySelectorAll('.pattern-pill');
+    patternPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        patternPills.forEach(p => {
+          p.classList.replace('bg-secondary-container', 'bg-surface-container');
+          p.classList.replace('text-on-secondary-container', 'text-on-surface-variant');
+          p.querySelector('span:nth-child(2)').classList.replace('font-bold', 'font-medium');
+        });
+        pill.classList.replace('bg-surface-container', 'bg-secondary-container');
+        pill.classList.replace('text-on-surface-variant', 'text-on-secondary-container');
+        pill.querySelector('span:nth-child(2)').classList.replace('font-medium', 'font-bold');
+
+        activePatternKey = pill.getAttribute('data-pattern');
+        resetBreathing();
+      });
+    });
+
+    // Soundscape card play state toggle
+    const soundCards = document.querySelectorAll('.sound-card');
+    soundCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const isPlaying = card.getAttribute('data-playing') === 'true';
+        soundCards.forEach(c => {
+          c.setAttribute('data-playing', 'false');
+          const btn = c.querySelector('button');
+          btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">play_arrow</span>';
+          btn.classList.replace('bg-secondary-container', 'bg-surface-container');
+          btn.classList.replace('text-on-secondary-container', 'text-on-surface-variant');
+        });
+
+        if (!isPlaying) {
+          card.setAttribute('data-playing', 'true');
+          const btn = card.querySelector('button');
+          btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">pause</span>';
+          btn.classList.replace('bg-surface-container', 'bg-secondary-container');
+          btn.classList.replace('text-on-surface-variant', 'text-on-secondary-container');
+        }
+      });
+    });
+  })();
+</script></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><div class="relative w-full max-w-md mx-auto pointer-events-auto"><div class="absolute -top-6 left-1/2 -translate-x-1/2 z-20"><button aria-label="Quick Add" class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] ring-4 ring-surface flex items-center justify-center transition-transform active:scale-95"><span class="material-symbols-outlined text-[30px]">add</span></button></div><nav class="w-full bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] rounded-t-3xl" data-active-classes="text-secondary font-semibold"><div class="grid grid-cols-5 items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="compad-gamification-study-quests" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-1">Home</span></a><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="academics" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-1">Academics</span></a><div class="flex flex-col items-center justify-end h-14 min-w-[44px] pb-1"><span class="font-label-sm text-label-sm text-on-surface-variant/70">Add</span></div><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="campus" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm mt-1">Campus</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-14 min-w-[44px] transition-colors text-secondary font-semibold" data-path="wellbeing-hub" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm mt-1">Wellbeing</span></a></div></nav></div></div></body></html>

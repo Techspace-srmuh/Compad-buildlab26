@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sh-blue",
+    "route": "Blue Line: North Campus & Labs Express",
+    "color": "#3F3DDB",
+    "frequency": "Every 10 min",
+    "status": "On Time",
+    "nextArrival": "3 min",
+    "stops": [
+      {
+        "name": "Student Union Central",
+        "time": "Now"
+      },
+      {
+        "name": "Turing Hall / Science Park",
+        "time": "4 min"
+      },
+      {
+        "name": "North Residence Halls",
+        "time": "9 min"
+      },
+      {
+        "name": "Research Pavilion",
+        "time": "14 min"
+      }
+    ]
+  },
+  {
+    "id": "sh-red",
+    "route": "Red Line: South Dorms & Athletic Complex",
+    "color": "#EF4444",
+    "frequency": "Every 15 min",
+    "status": "On Time",
+    "nextArrival": "7 min",
+    "stops": [
+      {
+        "name": "Student Union Central",
+        "time": "7 min"
+      },
+      {
+        "name": "Varsity Stadium & Gym",
+        "time": "12 min"
+      },
+      {
+        "name": "South Village Quad",
+        "time": "18 min"
+      }
+    ]
+  },
+  {
+    "id": "sh-green",
+    "route": "Green Line: Metro Station & Downtown Transit",
+    "color": "#10B981",
+    "frequency": "Every 20 min",
+    "status": "Slight Delay (+3m)",
+    "nextArrival": "11 min",
+    "stops": [
+      {
+        "name": "Central Library",
+        "time": "11 min"
+      },
+      {
+        "name": "Downtown Commuter Station",
+        "time": "22 min"
+      }
+    ]
+  }
+]

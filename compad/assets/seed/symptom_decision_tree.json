@@ -1,0 +1,86 @@
+{
+  "disclaimer": "DISCLAIMER: This symptom checker is a rule-based triage tool for informational purposes only. It is NOT medical advice, diagnosis, or treatment. If you are experiencing a life-threatening emergency, call Campus Police or 911 immediately.",
+  "categories": [
+    {
+      "id": "respiratory",
+      "name": "Cough, Cold & Fever",
+      "questions": [
+        {
+          "id": "q_resp_1",
+          "question": "Are you experiencing severe shortness of breath, bluish lips, or acute chest pain?",
+          "yes": {
+            "triage": "EMERGENCY",
+            "action": "Call Campus Police (555-0100) or 911 immediately. Seek emergency room care."
+          },
+          "no": "q_resp_2"
+        },
+        {
+          "id": "q_resp_2",
+          "question": "Is your temperature over 102\u00b0F (38.9\u00b0C) lasting more than 48 hours?",
+          "yes": {
+            "triage": "CLINIC",
+            "action": "Schedule an urgent same-day evaluation at Campus Student Health Clinic."
+          },
+          "no": "q_resp_3"
+        },
+        {
+          "id": "q_resp_3",
+          "question": "Do you have mild sore throat, nasal congestion, and mild cough without difficulty breathing?",
+          "yes": {
+            "triage": "SELF_CARE",
+            "action": "Hydrate frequently, rest, use warm saline gargles, monitor temperature, and quarantine if contagious."
+          },
+          "no": {
+            "triage": "CLINIC",
+            "action": "Call Campus Health advice nurse for personalized evaluation."
+          }
+        }
+      ]
+    },
+    {
+      "id": "headache",
+      "name": "Headache & Migraine",
+      "questions": [
+        {
+          "id": "q_head_1",
+          "question": "Did the headache come on suddenly like a thunderclap, or is it accompanied by stiff neck, confusion, or weakness on one side?",
+          "yes": {
+            "triage": "EMERGENCY",
+            "action": "RED ALERT: Possible stroke or intracranial hemorrhage. Call 911 immediately."
+          },
+          "no": "q_head_2"
+        },
+        {
+          "id": "q_head_2",
+          "question": "Did the headache follow a head bump, collision, or sports injury with dizziness or memory fog?",
+          "yes": {
+            "triage": "URGENT",
+            "action": "Possible concussion. Stop activity, seek athletic trainer or health clinic within 2 hours."
+          },
+          "no": {
+            "triage": "SELF_CARE",
+            "action": "Tension/dehydration headache: Drink 500ml water, rest in a dark quiet room, take approved OTC pain reliever."
+          }
+        }
+      ]
+    },
+    {
+      "id": "abdominal",
+      "name": "Abdominal & Stomach Pain",
+      "questions": [
+        {
+          "id": "q_ab_1",
+          "question": "Is the pain severe and localized in the lower right abdomen, or accompanied by persistent vomiting and high fever?",
+          "yes": {
+            "triage": "EMERGENCY",
+            "action": "URGENT CARE ALERT: Possible acute appendicitis. Go to nearest Emergency Department."
+          },
+          "no": {
+            "triage": "SELF_CARE",
+            "action": "Mild cramps/indigestion: Sip electrolyte fluids, eat bland foods (BRAT diet), avoid dairy/spicy foods."
+          }
+        }
+      ]
+    }
+  ]
+}

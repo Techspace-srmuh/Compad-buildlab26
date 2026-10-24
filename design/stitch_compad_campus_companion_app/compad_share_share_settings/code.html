@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#faf8ff;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error":"#ba1a1a","secondary-fixed":"#71f8e4","on-tertiary":"#ffffff","surface":"#faf8ff","on-surface-variant":"#464555","primary-fixed-dim":"#c1c1ff","secondary-container":"#6df5e1","on-error":"#ffffff","on-secondary-fixed":"#00201c","surface-container":"#eaedff","surface-dim":"#d2d9f4","on-tertiary-fixed-variant":"#653e00","outline":"#767587","inverse-surface":"#283044","secondary":"#006b5f","on-tertiary-container":"#ffc277","background":"#faf8ff","on-primary-fixed-variant":"#2c26cb","on-background":"#131b2e","secondary-fixed-dim":"#4fdbc8","tertiary-fixed-dim":"#ffb95f","on-error-container":"#93000a","primary":"#2319c5","surface-tint":"#4746e2","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-container-high":"#e2e7ff","error-container":"#ffdad6","on-tertiary-fixed":"#2a1700","primary-fixed":"#e1dfff","tertiary-fixed":"#ffddb8","inverse-on-surface":"#eef0ff","surface-bright":"#faf8ff","surface-container-lowest":"#ffffff","surface-variant":"#dae2fd","surface-container-highest":"#dae2fd","on-secondary-container":"#006f64","primary-container":"#3f3ddb","inverse-primary":"#c1c1ff","tertiary-container":"#7b4d00","tertiary":"#5c3800","outline-variant":"#c7c4d8","on-surface":"#131b2e","on-primary-container":"#c9c8ff","on-primary":"#ffffff","on-secondary-fixed-variant":"#005048","on-primary-fixed":"#08006c"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1.5rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2rem","gutter":"1rem","margin":"1.25rem","space-sm":"0.5rem"},fontFamily:{"title-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Plus Jakarta Sans"]},fontSize:{"title-md":["16px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(19,27,46,0.04)] pt-safe"><div class="h-14 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Go back" class="w-11 h-11 -ml-1.5 flex items-center justify-center text-on-surface hover:text-primary transition-colors active:scale-95" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><h1 class="font-title-lg text-title-lg text-on-surface truncate">Course Detail View</h1></div><div class="flex items-center shrink-0"><button aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center" type="button"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full pb-12">
+<!-- Top Ambient Campus Readiness Signal Card -->
+<section class="px-margin pt-space-md pb-space-xs">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-md shadow-sm">
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Local Mesh Ready</span>
+</div>
+<span class="inline-flex items-center gap-1 rounded-full bg-secondary-container px-2.5 py-0.5 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">lock</span> AES-256 GCM
+        </span>
+</div>
+<div class="flex items-center justify-between">
+<p class="font-headline-sm text-headline-sm text-on-surface">Campus AirVault</p>
+<span class="font-label-md text-label-md text-primary font-semibold">Active Mode</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High-speed peer sharing designed for zero-connectivity classrooms and lecture halls.</p>
+</div>
+</section>
+<!-- Section 1: Device Identity -->
+<section class="px-margin mt-space-md">
+<div class="flex items-center gap-space-xs mb-space-xs px-1">
+<span class="material-symbols-outlined text-primary text-[18px]">smartphone</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Device Identity</h2>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="deviceNameInput">Broadcast Identifier</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 bg-surface-container-lowest rounded-lg px-3.5 pr-11 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="deviceNameInput" type="text" value="Aarav's Pixel 8 (Library Pod 4)"/>
+<button aria-label="Edit device name" class="absolute right-1 w-9 h-9 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95" id="editNameBtn" onclick="document.getElementById('deviceNameInput').focus(); document.getElementById('deviceNameInput').select();" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">info</span>
+          Visible to peers sitting within approx 15m
+        </p>
+</div>
+<div class="rounded-lg bg-surface-container p-3 flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[18px]">podcasts</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Nearby Visibility</p>
+<p class="font-body-sm text-body-sm text-secondary truncate">Discoverable to campus peers</p>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+          Auto (Pod 4)
+        </span>
+</div>
+</div>
+</section>
+<!-- Section 2: Security & Verification -->
+<section class="px-margin mt-space-lg">
+<div class="flex items-center gap-space-xs mb-space-xs px-1">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Security & Verification</h2>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Toggle 1: Auto Accept -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-1">
+<div class="flex items-center gap-2 flex-wrap mb-0.5">
+<span class="font-title-md text-title-md text-on-surface">Auto-accept trusted peers</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+              Recommended: OFF
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Skip the manual one-tap handshake for friends saved in your Compad Circle.</p>
+</div>
+<button aria-checked="false" class="toggle-switch relative shrink-0 w-12 h-7 rounded-full bg-surface-variant p-0.5 transition-colors focus:outline-none" data-toggle="autoAccept" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="toggle-thumb inline-block h-6 w-6 rounded-full bg-surface-container-lowest shadow-md transform transition-transform translate-x-0"></span>
+</button>
+</div>
+<div class="h-px bg-surface-variant/40"></div>
+<!-- Toggle 2: Require PIN + QR -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-1">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-title-md text-title-md text-on-surface">Require PIN & QR Key</span>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Duress protection">shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Generates an ephemeral 4-digit token overlay to prevent unauthorized drive-by beam requests.</p>
+</div>
+<button aria-checked="true" class="toggle-switch relative shrink-0 w-12 h-7 rounded-full bg-primary p-0.5 transition-colors focus:outline-none" data-toggle="requirePin" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="toggle-thumb inline-block h-6 w-6 rounded-full bg-surface-container-lowest shadow-md transform transition-transform translate-x-5"></span>
+</button>
+</div>
+<div class="h-px bg-surface-variant/40"></div>
+<!-- Toggle 3: Scramble IP -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-1">
+<span class="font-title-md text-title-md text-on-surface block mb-0.5">Scramble Local IP in QR</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Obfuscates raw network interfaces through temporary multicast hashes inside dynamic QR codes.</p>
+</div>
+<button aria-checked="true" class="toggle-switch relative shrink-0 w-12 h-7 rounded-full bg-primary p-0.5 transition-colors focus:outline-none" data-toggle="scrambleIp" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="toggle-thumb inline-block h-6 w-6 rounded-full bg-surface-container-lowest shadow-md transform transition-transform translate-x-5"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Storage & Save Location -->
+<section class="px-margin mt-space-lg">
+<div class="flex items-center gap-space-xs mb-space-xs px-1">
+<span class="material-symbols-outlined text-primary text-[18px]">folder_special</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Storage & Destination</h2>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Folder Selector Trigger -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5">Default Save Destination</label>
+<button class="w-full text-left bg-surface-container-lowest rounded-lg p-3 flex items-center justify-between shadow-sm active:scale-[0.99] transition-transform" id="folderPickerTrigger" onclick="cycleFolderDestination()" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">folder_open</span>
+</div>
+<div class="min-w-0">
+<p class="font-title-md text-title-md text-on-surface truncate" id="folderNameText">Downloads / Compad Notebook / Local Vault</p>
+<p class="font-body-sm text-body-sm text-secondary truncate">Internal Device Memory • 42.8 GB Available</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] ml-2">unfold_more</span>
+</button>
+</div>
+<!-- Max File Size Segmented Control -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Max Single-Payload Limit</label>
+<span class="font-label-sm text-label-sm text-primary uppercase" id="activeLimitDisplay">No Cap</span>
+</div>
+<div class="grid grid-cols-4 gap-1 bg-surface-container p-1 rounded-xl" role="radiogroup">
+<button aria-checked="false" class="seg-btn py-2 text-center rounded-lg font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface active:scale-95" onclick="setSegment(this, '50 MB')" role="radio" type="button">
+            50 MB
+          </button>
+<button aria-checked="false" class="seg-btn py-2 text-center rounded-lg font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface active:scale-95" onclick="setSegment(this, '100 MB')" role="radio" type="button">
+            100 MB
+          </button>
+<button aria-checked="false" class="seg-btn py-2 text-center rounded-lg font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface active:scale-95" onclick="setSegment(this, '500 MB')" role="radio" type="button">
+            500 MB
+          </button>
+<button aria-checked="true" class="seg-btn py-2 text-center rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all" onclick="setSegment(this, 'Unlimited')" role="radio" type="button">
+            Unlimited
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Network Preferences -->
+<section class="px-margin mt-space-lg">
+<div class="flex items-center gap-space-xs mb-space-xs px-1">
+<span class="material-symbols-outlined text-primary text-[18px]">wifi_tethering</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Network Preferences</h2>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Toggle: Wi-Fi Direct over Bluetooth -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-1">
+<span class="font-title-md text-title-md text-on-surface block mb-0.5">Prefer Wi-Fi Direct</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Streams files via 5 GHz ad-hoc Wi-Fi channel for speeds up to 45 MB/s instead of Bluetooth LE.</p>
+</div>
+<button aria-checked="true" class="toggle-switch relative shrink-0 w-12 h-7 rounded-full bg-primary p-0.5 transition-colors focus:outline-none" data-toggle="wifiDirect" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="toggle-thumb inline-block h-6 w-6 rounded-full bg-surface-container-lowest shadow-md transform transition-transform translate-x-5"></span>
+</button>
+</div>
+<div class="h-px bg-surface-variant/40"></div>
+<!-- Toggle: Personal Hotspot Fallback -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 pr-1">
+<span class="font-title-md text-title-md text-on-surface block mb-0.5">Hotspot Fallback</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automatically spins up a temporary hidden micro-hotspot when standard Wi-Fi Direct handshake times out.</p>
+</div>
+<button aria-checked="true" class="toggle-switch relative shrink-0 w-12 h-7 rounded-full bg-primary p-0.5 transition-colors focus:outline-none" data-toggle="hotspotFallback" onclick="toggleSwitch(this)" role="switch" type="button">
+<span class="toggle-thumb inline-block h-6 w-6 rounded-full bg-surface-container-lowest shadow-md transform transition-transform translate-x-5"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 5: Data Hygiene & Security Actions -->
+<section class="px-margin mt-space-lg">
+<div class="flex items-center gap-space-xs mb-space-xs px-1">
+<span class="material-symbols-outlined text-error text-[18px]">cleaning_services</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant">Data Hygiene</h2>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<button class="w-full min-h-[48px] rounded-lg bg-surface-container-lowest p-space-sm flex items-center justify-between text-left text-error hover:bg-error-container/40 active:scale-[0.99] transition-all" id="clearCacheBtn" onclick="openCautionModal()" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-error">Clear Transfer History & Cached Keys</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Removes 18 saved peer receipts • 1.4 MB cache</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-error text-[20px]">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Visual Card: Campus Peer Protocol Snapshot -->
+<section class="px-margin mt-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-sm">
+<div class="flex items-center gap-space-sm mb-2">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Compad Zero-Trust Mesh</h3>
+<p class="font-body-sm text-body-sm text-secondary">Verified by Campus Keyring</p>
+</div>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>End-to-end ECDH shared secrets</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>No unencrypted logs stored on flash</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Guarantees Note -->
+<footer class="px-margin mt-space-lg text-center">
+<div class="inline-flex items-center justify-center gap-1.5 text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[18px] text-primary">security</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Hardware Sandbox Shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mx-auto leading-relaxed">
+      Zero data leaves your phone without explicit peer confirmation. Protected by Hardware Key and local AES-256 GCM sockets.
+    </p>
+</footer>
+<!-- Caution Confirmation Modal Overlay -->
+<div aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-gutter transition-opacity" id="cautionModal" role="dialog">
+<div class="w-full max-w-sm rounded-xl bg-surface-container-lowest p-space-lg shadow-xl transform transition-transform">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center mx-auto mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-center text-on-surface" id="modalTitle">Purge Transfer Cache?</h3>
+<p class="font-body-md text-body-md text-center text-on-surface-variant mt-2">
+        This permanently discards all temporary peer pairing tokens, handshake logs, and quick-reconnect keys. You will need to scan QR codes again to pair.
+      </p>
+<div class="mt-space-lg flex flex-col gap-2">
+<button class="w-full min-h-[48px] rounded-lg bg-error text-on-error font-label-lg text-label-lg flex items-center justify-center active:scale-[0.98] transition-transform shadow-sm" onclick="confirmClearCache()" type="button">
+          Confirm & Clear All
+        </button>
+<button class="w-full min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center active:scale-[0.98] transition-transform" onclick="closeCautionModal()" type="button">
+          Cancel
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed bottom-6 inset-x-gutter z-50 pointer-events-none transform translate-y-24 opacity-0 transition-all duration-300 flex justify-center" id="toastNotification">
+<div class="rounded-full bg-inverse-surface text-inverse-on-surface px-4 py-2.5 shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMsg">Settings updated successfully</span>
+</div>
+</div>
+</div>
+<script>
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    const newChecked = !isChecked;
+    btn.setAttribute('aria-checked', String(newChecked));
+    const thumb = btn.querySelector('.toggle-thumb');
+
+    if (newChecked) {
+      btn.classList.remove('bg-surface-variant');
+      btn.classList.add('bg-primary');
+      thumb.classList.remove('translate-x-0');
+      thumb.classList.add('translate-x-5');
+      showToast('Preference enabled');
+    } else {
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-surface-variant');
+      thumb.classList.remove('translate-x-5');
+      thumb.classList.add('translate-x-0');
+      showToast('Preference disabled');
+    }
+  }
+
+  function setSegment(targetBtn, label) {
+    const parent = targetBtn.parentElement;
+    const buttons = parent.querySelectorAll('.seg-btn');
+    buttons.forEach(btn => {
+      btn.setAttribute('aria-checked', 'false');
+      btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    targetBtn.setAttribute('aria-checked', 'true');
+    targetBtn.classList.remove('text-on-surface-variant');
+    targetBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-bold', 'shadow-sm');
+
+    document.getElementById('activeLimitDisplay').textContent = label;
+    showToast(`Max transfer limit set to ${label}`);
+  }
+
+  const folderLocations = [
+    'Downloads / Compad Notebook / Local Vault',
+    'Internal / Campus Mesh / Lecture Notes',
+    'Secure Vault / Encrypted Media'
+  ];
+  let folderIndex = 0;
+
+  function cycleFolderDestination() {
+    folderIndex = (folderIndex + 1) % folderLocations.length;
+    document.getElementById('folderNameText').textContent = folderLocations[folderIndex];
+    showToast('Destination folder changed');
+  }
+
+  function openCautionModal() {
+    const modal = document.getElementById('cautionModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeCautionModal() {
+    const modal = document.getElementById('cautionModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function confirmClearCache() {
+    closeCautionModal();
+    showToast('Cached peer keys & history cleared');
+  }
+
+  let toastTimeout;
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMsg');
+    msg.textContent = message;
+
+    clearTimeout(toastTimeout);
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    toastTimeout = setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2200);
+  }
+</script></main></body></html>

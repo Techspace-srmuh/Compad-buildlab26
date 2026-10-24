@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gym-1",
+    "name": "Cable Lat Pulldown",
+    "muscle": "Lats & Upper Back",
+    "difficulty": "Beginner",
+    "instructions": "Grip bar slightly wider than shoulders. Sit tall with thighs secure under pads. Pull bar smoothly down to upper chest while squeezing shoulder blades together. Slowly return with controlled resistance.",
+    "safety": "Do not jerk body backwards or pull behind neck."
+  },
+  {
+    "id": "gym-2",
+    "name": "Leg Press 45-Degree Sled",
+    "muscle": "Quadriceps & Glutes",
+    "difficulty": "Intermediate",
+    "instructions": "Place feet hip-width apart on platform. Disengage safety bars. Lower weight smoothly until knees are at 90 degrees. Press through midfoot and heels to return without locking knees.",
+    "safety": "Never lock knees out at the top of the repetition."
+  },
+  {
+    "id": "gym-3",
+    "name": "Concept2 Indoor Rower",
+    "muscle": "Full Body Cardio",
+    "difficulty": "Beginner",
+    "instructions": "Sequence: Legs drive, hip hinge backward, arms pull to sternum. Recovery: arms extend forward, hips hinge forward, knees bend returning to catch position.",
+    "safety": "Maintain a neutral spine; avoid rounding lower back."
+  }
+]
