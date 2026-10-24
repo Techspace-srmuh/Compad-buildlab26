@@ -1,0 +1,151 @@
+[
+  {
+    "id": "dining-hall-main",
+    "name": "Founder Commons Dining Hall",
+    "location": "Central Quad West",
+    "status": "Open",
+    "hours": "07:30 - 21:00",
+    "mealPeriods": [
+      {
+        "name": "Lunch",
+        "time": "11:30 - 14:30",
+        "items": [
+          {
+            "id": "m1",
+            "name": "Mediterranean Quinoa Bowl",
+            "calories": 480,
+            "protein": "16g",
+            "carbs": "62g",
+            "fat": "14g",
+            "tags": [
+              "Vegan",
+              "Gluten-Free"
+            ],
+            "price": 8.5
+          },
+          {
+            "id": "m2",
+            "name": "Herb Roasted Chicken Breast",
+            "calories": 560,
+            "protein": "44g",
+            "carbs": "22g",
+            "fat": "18g",
+            "tags": [
+              "Halal",
+              "High-Protein"
+            ],
+            "price": 10.25
+          },
+          {
+            "id": "m3",
+            "name": "Wild Mushroom Risotto",
+            "calories": 520,
+            "protein": "12g",
+            "carbs": "68g",
+            "fat": "20g",
+            "tags": [
+              "Vegetarian"
+            ],
+            "price": 9.0
+          },
+          {
+            "id": "m4",
+            "name": "Garden Fresh Salad Bar",
+            "calories": 220,
+            "protein": "6g",
+            "carbs": "18g",
+            "fat": "8g",
+            "tags": [
+              "Vegan",
+              "Gluten-Free"
+            ],
+            "price": 6.5
+          }
+        ]
+      },
+      {
+        "name": "Dinner",
+        "time": "17:00 - 20:30",
+        "items": [
+          {
+            "id": "m5",
+            "name": "Atlantic Grilled Salmon & Asparagus",
+            "calories": 610,
+            "protein": "48g",
+            "carbs": "14g",
+            "fat": "28g",
+            "tags": [
+              "Gluten-Free",
+              "High-Protein"
+            ],
+            "price": 12.0
+          },
+          {
+            "id": "m6",
+            "name": "Tofu Thai Green Curry",
+            "calories": 490,
+            "protein": "18g",
+            "carbs": "55g",
+            "fat": "16g",
+            "tags": [
+              "Vegan",
+              "Spicy"
+            ],
+            "price": 8.75
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tech-quad-cafe",
+    "name": "Cyber Cafe & Espresso Bar",
+    "location": "Turing Hall Atrium",
+    "status": "Open",
+    "hours": "08:00 - 18:00",
+    "mealPeriods": [
+      {
+        "name": "All Day Grab & Go",
+        "time": "08:00 - 18:00",
+        "items": [
+          {
+            "id": "m7",
+            "name": "Avocado & Egg Sourdough Toast",
+            "calories": 380,
+            "protein": "15g",
+            "carbs": "34g",
+            "fat": "19g",
+            "tags": [
+              "Vegetarian"
+            ],
+            "price": 6.0
+          },
+          {
+            "id": "m8",
+            "name": "Cold Brew Nitro Coffee",
+            "calories": 15,
+            "protein": "1g",
+            "carbs": "2g",
+            "fat": "0g",
+            "tags": [
+              "Vegan"
+            ],
+            "price": 4.25
+          },
+          {
+            "id": "m9",
+            "name": "Matcha Oat Latte",
+            "calories": 160,
+            "protein": "4g",
+            "carbs": "24g",
+            "fat": "5g",
+            "tags": [
+              "Vegan"
+            ],
+            "price": 5.0
+          }
+        ]
+      }
+    ]
+  }
+]

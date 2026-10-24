@@ -1,0 +1,41 @@
+[
+  {
+    "id": "club-1",
+    "name": "Robotics & Autonomous Systems Lab",
+    "category": "STEM",
+    "membersCount": 142,
+    "description": "Building autonomous rovers, drones, and competing in national robotics challenges.",
+    "nextEvent": {
+      "title": "Hands-on ROS2 Workshop",
+      "date": "This Thursday, 18:00",
+      "room": "Turing 104",
+      "rsvps": 38
+    }
+  },
+  {
+    "id": "club-2",
+    "name": "ACM Student Chapter & Competitive Programming",
+    "category": "STEM",
+    "membersCount": 230,
+    "description": "Weekly algorithmic problem-solving sessions, guest tech talks, and annual hackathons.",
+    "nextEvent": {
+      "title": "Fall Hackathon Kickoff & Teaming",
+      "date": "Saturday, 10:00",
+      "room": "Student Union Grand Hall",
+      "rsvps": 94
+    }
+  },
+  {
+    "id": "club-3",
+    "name": "Campus Wilderness & Outdoor Club",
+    "category": "Recreation",
+    "membersCount": 310,
+    "description": "Weekend hiking excursions, trail cleanups, camping retreats, and outdoor bouldering.",
+    "nextEvent": {
+      "title": "Sunset Ridge Trail Hike",
+      "date": "Sunday, 15:00",
+      "room": "Meet at Central Quad",
+      "rsvps": 45
+    }
+  }
+]

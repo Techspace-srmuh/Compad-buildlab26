@@ -1,0 +1,67 @@
+[
+  {
+    "id": "CS204",
+    "code": "CS 204",
+    "name": "Data Structures & Algorithms",
+    "credits": 4,
+    "department": "Computer Science",
+    "instructor": "Dr. Elena Rostova",
+    "color": "#3F3DDB",
+    "room": "Turing Hall 301",
+    "syllabus": "Analysis of algorithms, balanced trees, hash tables, graph algorithms, dynamic programming.",
+    "examDate": "2026-12-14T09:00:00Z",
+    "attendanceGoal": 85.0
+  },
+  {
+    "id": "MATH201",
+    "code": "MATH 201",
+    "name": "Linear Algebra & Multivariable Calc",
+    "credits": 4,
+    "department": "Mathematics",
+    "instructor": "Prof. Marcus Vance",
+    "color": "#14B8A6",
+    "room": "Euler Science Center 105",
+    "syllabus": "Vector spaces, eigenvalues, matrix decompositions, multiple integrals, Stokes theorem.",
+    "examDate": "2026-12-16T14:00:00Z",
+    "attendanceGoal": 80.0
+  },
+  {
+    "id": "PHYS102",
+    "code": "PHYS 102",
+    "name": "Electricity, Magnetism & Optics",
+    "credits": 4,
+    "department": "Physics",
+    "instructor": "Dr. Aris Thorne",
+    "color": "#F59E0B",
+    "room": "Newton Labs B12",
+    "syllabus": "Coulomb law, Gauss law, Maxwell equations, wave optics, interference and diffraction.",
+    "examDate": "2026-12-18T10:00:00Z",
+    "attendanceGoal": 75.0
+  },
+  {
+    "id": "ENG105",
+    "code": "ENG 105",
+    "name": "Technical Writing & Ethics",
+    "credits": 3,
+    "department": "Humanities",
+    "instructor": "Dr. Sarah Jenkins",
+    "color": "#8B5CF6",
+    "room": "Humanities Wing 204",
+    "syllabus": "Technical documentation, peer-reviewed proposals, engineering ethics, research citations.",
+    "examDate": "2026-12-11T13:30:00Z",
+    "attendanceGoal": 90.0
+  },
+  {
+    "id": "CS310",
+    "code": "CS 310",
+    "name": "Operating Systems & Distributed Networks",
+    "credits": 4,
+    "department": "Computer Science",
+    "instructor": "Prof. Kenji Takahashi",
+    "color": "#EC4899",
+    "room": "Turing Hall 102",
+    "syllabus": "Concurrency, virtual memory, scheduling, IPC, distributed file systems, Raft consensus.",
+    "examDate": "2026-12-21T09:00:00Z",
+    "attendanceGoal": 80.0
+  }
+]

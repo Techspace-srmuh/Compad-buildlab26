@@ -1,0 +1,228 @@
+{
+  "campusCenter": {
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  "nodes": [
+    {
+      "id": "n_turing",
+      "name": "Turing Hall (Computer Science)",
+      "type": "building",
+      "lat": 37.7755,
+      "lng": -122.4201,
+      "hasFloors": true,
+      "floors": [
+        "B1",
+        "Floor 1",
+        "Floor 2",
+        "Floor 3"
+      ]
+    },
+    {
+      "id": "n_euler",
+      "name": "Euler Science Center",
+      "type": "building",
+      "lat": 37.776,
+      "lng": -122.4185,
+      "hasFloors": true,
+      "floors": [
+        "Floor 1",
+        "Floor 2"
+      ]
+    },
+    {
+      "id": "n_newton",
+      "name": "Newton Physics Labs",
+      "type": "building",
+      "lat": 37.7748,
+      "lng": -122.4178,
+      "hasFloors": false
+    },
+    {
+      "id": "n_union",
+      "name": "Student Union & Dining",
+      "type": "amenity",
+      "lat": 37.774,
+      "lng": -122.4195,
+      "hasFloors": true,
+      "floors": [
+        "Floor 1",
+        "Floor 2"
+      ]
+    },
+    {
+      "id": "n_library",
+      "name": "Main University Library",
+      "type": "study",
+      "lat": 37.7745,
+      "lng": -122.4208,
+      "hasFloors": true,
+      "floors": [
+        "Floor 1",
+        "Floor 2",
+        "Floor 3",
+        "Floor 4"
+      ]
+    },
+    {
+      "id": "n_gym",
+      "name": "Varsity Athletic Gym & Pool",
+      "type": "health",
+      "lat": 37.7732,
+      "lng": -122.418,
+      "hasFloors": false
+    },
+    {
+      "id": "n_quad",
+      "name": "Central Quad Fountain Plaza",
+      "type": "junction",
+      "lat": 37.7747,
+      "lng": -122.4194,
+      "hasFloors": false
+    },
+    {
+      "id": "n_shuttle_hub",
+      "name": "Transit & Shuttle Pavilion",
+      "type": "transit",
+      "lat": 37.7738,
+      "lng": -122.4205,
+      "hasFloors": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "n_quad",
+      "target": "n_turing",
+      "distanceMeters": 110,
+      "accessible": true
+    },
+    {
+      "source": "n_quad",
+      "target": "n_euler",
+      "distanceMeters": 160,
+      "accessible": true
+    },
+    {
+      "source": "n_quad",
+      "target": "n_newton",
+      "distanceMeters": 140,
+      "accessible": true
+    },
+    {
+      "source": "n_quad",
+      "target": "n_union",
+      "distanceMeters": 90,
+      "accessible": true
+    },
+    {
+      "source": "n_quad",
+      "target": "n_library",
+      "distanceMeters": 120,
+      "accessible": true
+    },
+    {
+      "source": "n_union",
+      "target": "n_gym",
+      "distanceMeters": 170,
+      "accessible": true
+    },
+    {
+      "source": "n_library",
+      "target": "n_shuttle_hub",
+      "distanceMeters": 80,
+      "accessible": true
+    },
+    {
+      "source": "n_union",
+      "target": "n_shuttle_hub",
+      "distanceMeters": 95,
+      "accessible": true
+    },
+    {
+      "source": "n_turing",
+      "target": "n_euler",
+      "distanceMeters": 150,
+      "accessible": true
+    }
+  ],
+  "indoorPlans": {
+    "n_turing": {
+      "Floor 1": [
+        {
+          "room": "101",
+          "name": "Auditorium A",
+          "x": 50,
+          "y": 80,
+          "type": "lecture"
+        },
+        {
+          "room": "102",
+          "name": "Operating Systems Lab",
+          "x": 180,
+          "y": 80,
+          "type": "lab"
+        },
+        {
+          "room": "104",
+          "name": "Data Structures Lab",
+          "x": 300,
+          "y": 80,
+          "type": "lab"
+        },
+        {
+          "room": "Restroom",
+          "name": "Accessible Restroom",
+          "x": 180,
+          "y": 220,
+          "type": "service"
+        },
+        {
+          "room": "Elevator",
+          "name": "Central Lift",
+          "x": 120,
+          "y": 220,
+          "type": "elevator"
+        }
+      ],
+      "Floor 2": [
+        {
+          "room": "201",
+          "name": "Seminar Room B",
+          "x": 50,
+          "y": 80,
+          "type": "seminar"
+        },
+        {
+          "room": "205",
+          "name": "AI Research Suite",
+          "x": 180,
+          "y": 80,
+          "type": "lab"
+        },
+        {
+          "room": "210",
+          "name": "Graduate Lounge",
+          "x": 300,
+          "y": 80,
+          "type": "study"
+        }
+      ],
+      "Floor 3": [
+        {
+          "room": "301",
+          "name": "CS 204 Main Lecture Hall",
+          "x": 50,
+          "y": 80,
+          "type": "lecture"
+        },
+        {
+          "room": "412",
+          "name": "Dr. Rostova Office",
+          "x": 250,
+          "y": 150,
+          "type": "office"
+        }
+      ]
+    }
+  }
+}

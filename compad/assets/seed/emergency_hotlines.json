@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hl-1",
+    "title": "Campus Police Emergency",
+    "phone": "555-0100",
+    "description": "24/7 Rapid response for active incidents, security, and fire dispatch.",
+    "urgent": true,
+    "category": "Police"
+  },
+  {
+    "id": "hl-2",
+    "title": "SafeWalk Virtual Escort Dispatch",
+    "phone": "555-0133",
+    "description": "Student safety patrol officer escort across campus after dusk.",
+    "urgent": false,
+    "category": "Safety"
+  },
+  {
+    "id": "hl-3",
+    "title": "Campus Student Health Clinic",
+    "phone": "555-0111",
+    "description": "Urgent medical triage, nurse hotline, and on-campus clinic appointments.",
+    "urgent": false,
+    "category": "Health"
+  },
+  {
+    "id": "hl-4",
+    "title": "Mental Health & Crisis Hotline",
+    "phone": "555-0122",
+    "description": "Confidential 24/7 counseling support and crisis intervention.",
+    "urgent": true,
+    "category": "Counseling"
+  },
+  {
+    "id": "hl-5",
+    "title": "Facilities & Chemical Spills",
+    "phone": "555-0144",
+    "description": "Gas leaks, elevator outages, electrical hazards, chemical containment.",
+    "urgent": true,
+    "category": "Facilities"
+  },
+  {
+    "id": "hl-6",
+    "title": "National Emergency Services",
+    "phone": "911",
+    "description": "City-wide police, ambulance, and municipal fire services.",
+    "urgent": true,
+    "category": "Municipal"
+  }
+]

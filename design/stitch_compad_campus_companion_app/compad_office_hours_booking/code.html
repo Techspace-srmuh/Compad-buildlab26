@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Compad</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "primary-fixed": "#e1dfff", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#08006c", "error-container": "#ffdad6", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "secondary-container": "#6df5e1", "secondary-fixed-dim": "#4fdbc8", "tertiary-fixed": "#ffddb8", "background": "#faf8ff", "on-primary-fixed-variant": "#2c26cb", "outline": "#767587", "surface-tint": "#4746e2", "primary-fixed-dim": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "primary-container": "#3f3ddb", "on-secondary-fixed": "#00201c", "secondary": "#006b5f", "surface": "#faf8ff", "primary": "#2319c5", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f64", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "on-tertiary-container": "#ffc277", "on-surface-variant": "#464555", "on-tertiary": "#ffffff", "surface-variant": "#dae2fd", "tertiary": "#5c3800", "surface-container": "#eaedff", "on-primary-container": "#c9c8ff", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "inverse-primary": "#c1c1ff", "tertiary-container": "#7b4d00", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed": "#71f8e4", "surface-container-high": "#e2e7ff", "outline-variant": "#c7c4d8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Compad Brand Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V8pF8NrWqqjyJJQnFdwZQxwcuT9MNAuF_6-MjuMdk1uGFYWm17ar9qtfMtaecHBprODvQY1y3XBSjvpuhavxiEMXkjiUrYboUBmLqn4SRxl6pvv26jfYC6WmQoa1xrlqGfcA3rAilkRxrtfDi77M8PmM9XwpOc44InJc6nvMa2FPUWybLela84U0toqt9_fR8ZTPUsL6w8UhfdQTFvqVfOP0-NDScQaE-0CsQMFaB1YADSkTm1W5QF3yc"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface truncate">Compad</span><div class="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="material-symbols-outlined text-[13px] leading-none text-secondary">cloud_done</span><span class="font-label-sm text-label-sm leading-none hidden xs:inline">Offline Ready</span></div></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Academics Hub</span></div></div><div class="flex items-center gap-1.5 flex-shrink-0"><button aria-label="Search campus resources" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors active:scale-95"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Campus Emergency SOS" class="h-9 px-2.5 flex items-center justify-center gap-1 rounded-full bg-error text-on-error shadow-[0_2px_8px_rgba(186,26,26,0.35)] active:scale-95 transition-transform" data-path="sos-emergency" href="#"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-sm text-label-sm tracking-wider uppercase font-bold">SOS</span></a><a aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 active:scale-95 transition-transform" data-path="student-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.12)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Mf6WF0AkTSFIQQ8HyZ1mfLDe2FOZAsnmxjPehYOGz9xeWj5bapau8GqJr-B2kSC4mmuK8ZC9KbHEXQjjxnvgAUT18uDmSrbl7oavXLyQmiUgqSIOtUZam0L1sTxp1SWk0Zmc4R8TW0aZUC221epj4xyWS1LNAjuO-4Wuo0xYHZTtX1cfRRrJVkHjcNucSpU4LCxyHSw3lSjsRw2Cn0Yi3hpCswJIpWw6NXeh_qMoMnOZcfeGHcXl"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-14 pb-28 bg-surface"><div class="flex flex-col w-full space-y-space-md">
+<!-- Breadcrumb & Micro-Status -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span>Academics</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Office Hours Booking</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">sync_saved_locally</span>
+<span>Sync Ready</span>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-col space-y-space-xs">
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm transition-all" placeholder="Search professor, course, or TA..." type="text"/>
+<button aria-label="Filter options" class="absolute right-2.5 w-7 h-7 flex items-center justify-center rounded-lg text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Filter Chips Horizontal Scroll -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 pt-0.5 no-scrollbar">
+<button class="flex items-center gap-1.5 h-8 px-3.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>My Professors</span>
+</button>
+<button class="flex items-center gap-1.5 h-8 px-3.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors active:scale-95">
+<span>Teaching Assistants</span>
+</button>
+<button class="flex items-center gap-1.5 h-8 px-3.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors active:scale-95">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Today Available</span>
+</button>
+<button class="flex items-center gap-1.5 h-8 px-3.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors active:scale-95">
+<span>Virtual Zoom Only</span>
+</button>
+</div>
+</div>
+<!-- Active Booking Flow: Spotlight Card for Prof. Vance -->
+<div class="flex flex-col bg-surface-container-lowest rounded-[20px] p-space-md shadow-md shadow-surface-variant/30 relative overflow-hidden">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-primary-fixed/35 blur-2xl pointer-events-none"></div>
+<!-- Instructor Header Strip -->
+<div class="flex items-start justify-between gap-space-sm pb-space-sm relative z-10">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-13 h-13 rounded-2xl object-cover shadow-sm bg-surface-container-high" data-alt="A portrait of Professor Jennifer Vance, a friendly female computer science professor with spectacles and smiling eyes in a warmly lit university office filled with technical textbooks and architectural diagrams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4HzzcGXPTIqpsrNqONruZSxOzNcl5whaimdluz0CmebtzjderekdS-eNvZRJ6R_vFMBX_VIt2VT_nUR5GRpIympmKRTHooO3bjG00XAV2wB1T1DKf5bzAsb3XgYrS6rpOiINfeO438AlDJ0dp4G_qoMGkLhK7UaCSsJ--uH50R8Cd9xKW98J0FtIn5hs52o8Td0lH8E_Q3Ppt39E0chM1qaxwJJe0hcvJ84l-qY_t7nVdMK4W7fET"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary ring-2 ring-surface-container-lowest flex items-center justify-center text-on-secondary" title="Online Sync Verified">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Prof. Jennifer Vance</h2>
+<span class="px-1.5 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Primary</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">CS 301 Distributed Systems</span>
+<div class="flex items-center gap-2 mt-0.5 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[13px]">location_on</span> Gates CS 402</span>
+<span>•</span>
+<span class="flex items-center gap-0.5 text-primary"><span class="material-symbols-outlined text-[13px]">videocam</span> Hybrid Zoom</span>
+</div>
+</div>
+</div>
+<button aria-label="View professor syllabus" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+</div>
+<!-- Booking Interactive Sub-section -->
+<div class="mt-2 pt-3 bg-surface-container-low/70 rounded-2xl p-3.5 flex flex-col space-y-space-sm">
+<!-- Date Picker Strip -->
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Select Day</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">event_repeat</span> Autumn W7
+        </span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Selected Date -->
+<button class="flex flex-col items-start p-2.5 rounded-xl bg-surface-container-lowest shadow-sm text-left transition-all active:scale-[0.98]" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm text-primary font-bold">Tomorrow</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold mt-0.5">Fri, Oct 25</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 slots open</span>
+</button>
+<!-- Alternative Date -->
+<button class="flex flex-col items-start p-2.5 rounded-xl bg-surface-container/60 hover:bg-surface-container text-left transition-all active:scale-[0.98]" type="button">
+<span class="font-label-sm text-label-sm text-outline">Next Week</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold mt-0.5">Mon, Oct 28</span>
+<span class="font-body-sm text-body-sm text-outline">5 slots open</span>
+</button>
+</div>
+<!-- Time-Slot Grid (15-min slots) -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">15-Min Slots (PST)</span>
+<span class="font-label-sm text-label-sm text-outline">Gates CS 402</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Slot 1: Taken -->
+<div class="flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-container-high/40 text-outline opacity-60 cursor-not-allowed">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+<span class="font-label-lg text-label-lg line-through">02:00 PM</span>
+</div>
+<span class="font-label-sm text-label-sm">Booked</span>
+</div>
+<!-- Slot 2: Selected (Indigo Pill) -->
+<div class="flex items-center justify-between px-3 py-2.5 rounded-xl bg-primary-container text-on-primary shadow-sm shadow-primary-container/30">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-lg text-label-lg font-bold">02:15 PM</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wide bg-on-primary/20 px-1.5 py-0.5 rounded">Selected</span>
+</div>
+<!-- Slot 3: Available -->
+<button class="flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-xs transition-colors text-left active:scale-[0.98]" type="button">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">radio_button_unchecked</span>
+<span class="font-label-lg text-label-lg">02:30 PM</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Open</span>
+</button>
+<!-- Slot 4: Available -->
+<button class="flex items-center justify-between px-3 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface shadow-xs transition-colors text-left active:scale-[0.98]" type="button">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">radio_button_unchecked</span>
+<span class="font-label-lg text-label-lg">02:45 PM</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Open</span>
+</button>
+</div>
+<!-- Question Prompt Input -->
+<div class="flex flex-col space-y-1.5 pt-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-medium flex items-center justify-between" for="topic-prompt">
+<span>Discussion Objective</span>
+<span class="text-outline font-label-sm text-label-sm">Required for TA/Prof prep</span>
+</label>
+<div class="relative">
+<textarea class="w-full p-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container shadow-xs resize-none" id="topic-prompt" rows="2">Raft leader election split-brain scenario clarification</textarea>
+<div class="absolute right-2 bottom-2 text-outline font-label-sm text-label-sm">52/120</div>
+</div>
+</div>
+<!-- Offline Queued Notice Banner -->
+<div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-secondary-fixed/30 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">offline_bolt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Queued Offline Mode</span>
+<p class="font-body-sm text-body-sm leading-snug">
+            Slot will auto-reserve instantly upon campus Wi-Fi reconnection or BLE peer sync in the lecture hall.
+          </p>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<button class="w-full h-12 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md shadow-primary-container/25 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">cloud_queue</span>
+<span>Queue Office Hours Slot (Offline)</span>
+</button>
+</div>
+</div>
+<!-- Other Available Faculty & TAs -->
+<div class="flex flex-col space-y-space-sm pt-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">More Available Instructors</h3>
+<span class="font-label-sm text-label-sm text-outline">Fall Quarter 2024</span>
+</div>
+<!-- Prof. Carl Gauss Card -->
+<div class="flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-12 h-12 rounded-2xl object-cover shrink-0 bg-surface-container-high" data-alt="Warm studio photo of Professor Carl Gauss, an elderly mathematics professor with a white beard wearing a tweed jacket, standing in front of a green chalkboard filled with multivariate calculus equations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk61-K1QxMnuNQ8M_sEpnA20_DfOv8UguutmZgKEULQcAgQzYFQcdKnWKyVrXHJGUesgJkvoCPsczu58Ii_FUeICnOzYYhhRVlLrZx4kNsAv8YTHxd_fzv_4yq-h1ihPvhCW7nvtPciS8yfFGhkz3BLZxEhK29VU61_qC9MClrcbXOno9RMngzUdAtkIPY2AialsRsH7VvF-CwUZ3AU929QojaQ7NvL1vroH-hpYyE1s0wSlRsMfzI"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">Prof. Carl Gauss</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">MATH 241 Calculus III</span>
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[13px]">domain</span>
+<span>Turing Hall 204</span>
+<span>•</span>
+<span class="text-tertiary-container font-medium">Tomorrow 10:00 AM</span>
+</div>
+</div>
+</div>
+<button class="h-9 px-3 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shrink-0 shadow-xs hover:bg-primary-fixed transition-colors active:scale-95">
+        Book
+      </button>
+</div>
+<!-- TA Marcus Chen Card -->
+<div class="flex items-center justify-between p-3.5 rounded-[20px] bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-12 h-12 rounded-2xl object-cover shrink-0 bg-surface-container-high" data-alt="Young Asian graduate teaching assistant Marcus Chen wearing casual campus apparel with a laptop and coffee mug in a university computer science lab environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3P3Vznt72P-GI3uvfqa_6d02DNfG2AZ9a7VpqD7t6eNRimaHxHvesorc40y1r3hsMnK7S5QBUCgIK1wlJ6agjgmKJ8H6N-pw0S2zm7-q5xLN9VvEMprEbKo35SV2bbhwmHYgPOnxv7w4BLNArpAuQw4r8wZSxqRfjV-wLk4vlYdz_CfsDFtYyavIhXb4JJj6DjPfehE-PhXZ-BLytrnglt0S7CDgsTjCHtfFq306rHx6qD4UEPl1Y"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">TA Marcus Chen</span>
+<span class="px-1 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Lead TA</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">CS 301 Lab Support</span>
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[13px]">meeting_room</span>
+<span>CS Commons Pod B</span>
+<span>•</span>
+<span class="text-secondary font-medium">Today 4:00 PM</span>
+</div>
+</div>
+</div>
+<button class="h-9 px-3 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shrink-0 shadow-xs hover:bg-primary-fixed transition-colors active:scale-95">
+        Book
+      </button>
+</div>
+</div>
+<!-- Upcoming Bookings Drawer Card -->
+<div class="flex flex-col p-space-md rounded-[20px] bg-surface-container-high/60 space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">bookmark_added</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Upcoming Bookings</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">1 Active</span>
+</div>
+<!-- Queued locally reservation ticket -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/40 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">cell_tower</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Friday 02:15 PM</span>
+<span class="text-outline font-body-sm text-body-sm">• Prof. Vance</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span>Queued locally</span>
+<span class="animate-pulse">📡</span>
+<span class="text-outline ml-1">Gates 402</span>
+</div>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg text-outline hover:text-error flex items-center justify-center transition-colors" title="Cancel or remove booking">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div></main><div class="fixed bottom-0 inset-x-0 z-50 pointer-events-none"><div class="relative max-w-[440px] mx-auto"><div class="absolute left-1/2 -top-6 -translate-x-1/2 pointer-events-auto z-20"><button aria-label="Quick Add Note, Task or Mood" class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] p-0.5 active:scale-95 transition-transform ring-4 ring-surface"><span class="material-symbols-outlined text-[30px]">add</span></button></div></div></div><nav class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] pb-safe" data-active-classes="text-primary font-bold"><div class="flex justify-between items-center h-20 px-2 max-w-[440px] mx-auto"><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="academics-hub" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Academics</span></a><div class="flex-1 flex flex-col items-center justify-end h-14 pb-1 pointer-events-none opacity-0"><span class="font-label-sm text-label-sm">Add</span></div><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-map" href="#"><span class="material-symbols-outlined text-[24px]">near_me</span><span class="font-label-sm text-label-sm mt-0.5">Campus</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-life" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm mt-0.5">Life</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="student-wellbeing" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm mt-0.5">Wellbeing</span></a></div></nav></body></html>

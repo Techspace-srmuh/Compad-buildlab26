@@ -1,0 +1,70 @@
+[
+  {
+    "id": "cpr",
+    "title": "Adult Hands-Only CPR",
+    "category": "Life Support",
+    "critical": true,
+    "steps": [
+      "Check responsiveness and breathing. Shout for help and call 911 / Campus Police immediately.",
+      "Place victim flat on their back on a firm surface.",
+      "Place the heel of one hand in the center of the chest, place your other hand on top and interlock fingers.",
+      "Push hard and fast in the center of the chest: 100 to 120 compressions per minute (to the beat of Stayin Alive).",
+      "Allow the chest to recoil completely between compressions. Do not stop until paramedics or an AED arrives."
+    ],
+    "warning": "If an AED is available, turn it on immediately and follow audio instructions."
+  },
+  {
+    "id": "choking",
+    "title": "Choking (Heimlich Maneuver)",
+    "category": "Airway",
+    "critical": true,
+    "steps": [
+      "Confirm if victim cannot speak, cough, or breathe.",
+      "Stand behind the person, lean them slightly forward.",
+      "Make a fist with one hand and place it just above the person navel.",
+      "Grasp your fist with your other hand and give quick, upward abdominal thrusts.",
+      "Repeat until the object is expelled or the person becomes unconscious (if unconscious, initiate CPR)."
+    ],
+    "warning": "Do not perform abdominal thrusts on infants; use back blows and chest thrusts instead."
+  },
+  {
+    "id": "severe-bleeding",
+    "title": "Severe Bleeding & Wound Management",
+    "category": "Trauma",
+    "critical": true,
+    "steps": [
+      "Protect yourself: wear gloves if available.",
+      "Apply firm, continuous direct pressure to the wound with a clean cloth or gauze.",
+      "Maintain continuous pressure for at least 10 minutes without lifting to check.",
+      "If blood soaks through, add another pad on top; do not remove the first layer.",
+      "If limb bleeding does not stop and you are trained, apply a commercial tourniquet 2-3 inches above the wound (not over a joint)."
+    ],
+    "warning": "Call 911 immediately for arterial bleeding (spurting bright red blood)."
+  },
+  {
+    "id": "burns",
+    "title": "Thermal & Chemical Burns",
+    "category": "Skin & Soft Tissue",
+    "critical": false,
+    "steps": [
+      "Immediately cool the burn under gentle running cool (not ice cold) water for 10-20 minutes.",
+      "Remove jewelry or restrictive clothing before swelling begins.",
+      "Cover loosely with sterile, non-adherent dressing or clean plastic wrap.",
+      "Do NOT pop blisters, and do NOT apply butter, toothpaste, or ointments."
+    ],
+    "warning": "For chemical burns, flush continuously with water for at least 20 minutes and notify emergency services."
+  },
+  {
+    "id": "sprains",
+    "title": "Sprains, Strains & Fractures",
+    "category": "Musculoskeletal",
+    "critical": false,
+    "steps": [
+      "Rest: stop physical activity and avoid putting weight on the injured limb.",
+      "Ice: apply ice pack wrapped in a cloth for 15-20 minutes every 2-3 hours.",
+      "Compress: gently wrap with an elastic bandage to minimize swelling (not too tight).",
+      "Elevate: prop up the limb above heart level when resting."
+    ],
+    "warning": "If limb is deformed, bone is visible, or there is numbness, immobilize and seek urgent orthopedic care."
+  }
+]

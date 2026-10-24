@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Compad</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "primary-fixed": "#e1dfff", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#08006c", "error-container": "#ffdad6", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "secondary-container": "#6df5e1", "secondary-fixed-dim": "#4fdbc8", "tertiary-fixed": "#ffddb8", "background": "#faf8ff", "on-primary-fixed-variant": "#2c26cb", "outline": "#767587", "surface-tint": "#4746e2", "primary-fixed-dim": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "primary-container": "#3f3ddb", "on-secondary-fixed": "#00201c", "secondary": "#006b5f", "surface": "#faf8ff", "primary": "#2319c5", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "inverse-on-surface": "#eef0ff", "on-secondary-container": "#006f64", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "on-tertiary-container": "#ffc277", "on-surface-variant": "#464555", "on-tertiary": "#ffffff", "surface-variant": "#dae2fd", "tertiary": "#5c3800", "surface-container": "#eaedff", "on-primary-container": "#c9c8ff", "error": "#ba1a1a", "on-tertiary-fixed": "#2a1700", "surface-container-lowest": "#ffffff", "inverse-primary": "#c1c1ff", "tertiary-container": "#7b4d00", "on-background": "#131b2e", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed": "#71f8e4", "surface-container-high": "#e2e7ff", "outline-variant": "#c7c4d8" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-14 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Compad Brand Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V8pF8NrWqqjyJJQnFdwZQxwcuT9MNAuF_6-MjuMdk1uGFYWm17ar9qtfMtaecHBprODvQY1y3XBSjvpuhavxiEMXkjiUrYboUBmLqn4SRxl6pvv26jfYC6WmQoa1xrlqGfcA3rAilkRxrtfDi77M8PmM9XwpOc44InJc6nvMa2FPUWybLela84U0toqt9_fR8ZTPUsL6w8UhfdQTFvqVfOP0-NDScQaE-0CsQMFaB1YADSkTm1W5QF3yc"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface truncate">Compad</span><div class="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="material-symbols-outlined text-[13px] leading-none text-secondary">cloud_done</span><span class="font-label-sm text-label-sm leading-none hidden xs:inline">Offline Ready</span></div></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Academics Hub</span></div></div><div class="flex items-center gap-1.5 flex-shrink-0"><button aria-label="Search campus resources" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors active:scale-95"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Campus Emergency SOS" class="h-9 px-2.5 flex items-center justify-center gap-1 rounded-full bg-error text-on-error shadow-[0_2px_8px_rgba(186,26,26,0.35)] active:scale-95 transition-transform" data-path="sos-emergency" href="#"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span class="font-label-sm text-label-sm tracking-wider uppercase font-bold">SOS</span></a><a aria-label="Student Profile" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 active:scale-95 transition-transform" data-path="student-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.12)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Mf6WF0AkTSFIQQ8HyZ1mfLDe2FOZAsnmxjPehYOGz9xeWj5bapau8GqJr-B2kSC4mmuK8ZC9KbHEXQjjxnvgAUT18uDmSrbl7oavXLyQmiUgqSIOtUZam0L1sTxp1SWk0Zmc4R8TW0aZUC221epj4xyWS1LNAjuO-4Wuo0xYHZTtX1cfRRrJVkHjcNucSpU4LCxyHSw3lSjsRw2Cn0Yi3hpCswJIpWw6NXeh_qMoMnOZcfeGHcXl"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-14 pb-28 bg-surface"><div class="flex flex-col w-full gap-space-md">
+<!-- Top Navigation & Action Row -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button aria-label="Go Back to Academics" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface hover:bg-surface-container active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Academics</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+<span class="text-primary font-bold">Focus Mode</span>
+</div>
+<h1 class="font-title-lg text-title-lg text-on-surface">Pomodoro Timer</h1>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button aria-label="Toggle Sound Effects" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:text-on-surface active:scale-95 transition-all" id="soundToggleBtn">
+<span class="material-symbols-outlined text-[20px]" id="soundIcon">volume_up</span>
+</button>
+<button aria-label="Timer Settings" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Mode Selector Segmented Tabs -->
+<div class="p-1 bg-surface-container-low rounded-full flex items-center justify-between gap-1 shadow-sm">
+<button class="mode-tab flex-1 py-2 px-3 rounded-full text-center font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" data-mode="focus" onclick="switchMode(this, 1458, 1500)">
+      Focus (25m)
+    </button>
+<button class="mode-tab flex-1 py-2 px-3 rounded-full text-center font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-mode="short" onclick="switchMode(this, 300, 300)">
+      Short Break (5m)
+    </button>
+<button class="mode-tab flex-1 py-2 px-3 rounded-full text-center font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" data-mode="long" onclick="switchMode(this, 900, 900)">
+      Long Break (15m)
+    </button>
+</div>
+<!-- Active Task / Course Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/40 text-on-secondary-fixed-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">code_blocks</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-bold">CS 301</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Distributed Systems</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface truncate">Consensus &amp; Raft Review</p>
+</div>
+</div>
+<button class="flex-shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all">
+<span>Switch</span>
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+</button>
+</div>
+<!-- Interactive Circular Timer Hero -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Ambient subtle background glow -->
+<div class="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-44 h-44 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative w-64 h-64 flex items-center justify-center my-2">
+<!-- SVG Progress Ring -->
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 240 240">
+<!-- Track Circle -->
+<circle class="stroke-surface-container-high" cx="120" cy="120" fill="transparent" r="100" stroke-width="12"></circle>
+<!-- Progress Active Ring -->
+<circle class="stroke-primary transition-all duration-1000 ease-linear" cx="120" cy="120" fill="transparent" id="timerProgressRing" r="100" stroke-dasharray="628.3" stroke-dashoffset="17.6" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Content -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<!-- Live Status Pill -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low mb-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" id="sessionStatus">Deep Work • Cycle 3 of 4</span>
+</div>
+<!-- Large Digital Countdown -->
+<span class="font-headline-lg text-[44px] leading-tight tracking-tight font-bold text-on-surface font-headline-lg select-none" id="timerDisplay">
+          24:18
+        </span>
+<!-- Target End Time Hint -->
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications_active</span>
+          Ends at 11:42 AM
+        </span>
+</div>
+</div>
+<!-- Ambient Sound Pill Selector -->
+<div class="mt-3 flex items-center gap-2">
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface transition-all active:scale-95 shadow-sm" id="ambientSoundBtn">
+<span class="material-symbols-outlined text-[18px] text-secondary">water_drop</span>
+<span class="font-label-md text-label-md" id="ambientSoundName">Rain in Turing Hall</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+<button aria-label="Toggle ambient audio" class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center active:scale-90 transition-transform" id="playAmbientBtn">
+<span class="material-symbols-outlined text-[18px]" id="ambientPlayIcon">play_arrow</span>
+</button>
+</div>
+<!-- Ergonomic Thumb Zone Controls -->
+<div class="w-full flex items-center justify-center gap-4 mt-6">
+<!-- Reset Micro-Button -->
+<button aria-label="Reset Timer" class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center justify-center active:scale-90 transition-all shadow-sm" onclick="resetTimer()">
+<span class="material-symbols-outlined text-[22px]">replay</span>
+</button>
+<!-- Primary Big Thumb Trigger -->
+<button class="flex-1 max-w-[190px] h-14 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2.5 shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] active:scale-95 transition-all" id="mainTimerBtn" onclick="toggleTimer()">
+<span class="material-symbols-outlined text-[26px]" id="mainTimerIcon">pause</span>
+<span id="mainTimerLabel">Pause</span>
+</button>
+<!-- Skip Micro-Button -->
+<button aria-label="Skip Session" class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center justify-center active:scale-90 transition-all shadow-sm" onclick="skipTimer()">
+<span class="material-symbols-outlined text-[22px]">skip_next</span>
+</button>
+</div>
+</div>
+<!-- Today's Study Summary Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">insights</span>
+<h2 class="font-title-md text-title-md text-on-surface">Today's Focus</h2>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span>🔥</span>
+<span>5-Day Streak</span>
+</div>
+</div>
+<!-- Metrics Row -->
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Time Focused</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">3h 45m</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">94%</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Intervals Completed</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 8 goal</span>
+</div>
+</div>
+</div>
+<!-- Weekly Mini Bar Chart with 4h Goal Line -->
+<div class="mt-1 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Weekly Distribution</span>
+<span class="flex items-center gap-1 text-primary">
+<span class="w-2.5 h-0.5 bg-primary"></span>
+          Daily Target: 4h
+        </span>
+</div>
+<!-- Mini Chart -->
+<div class="relative h-28 w-full flex items-end justify-between px-2 pt-4 bg-surface-container-low/60 rounded-xl overflow-hidden">
+<!-- 4h Target guideline -->
+<div class="absolute inset-x-0 top-8 border-b-2 border-dashed border-primary/20 pointer-events-none"></div>
+<!-- Monday -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 bg-primary-fixed rounded-t-md h-14 flex items-end justify-center">
+<span class="font-label-sm text-[9px] text-on-primary-fixed mb-0.5">3.2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+</div>
+<!-- Tuesday -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 bg-primary-fixed rounded-t-md h-18 flex items-end justify-center" style="height: 4.2rem;">
+<span class="font-label-sm text-[9px] text-on-primary-fixed mb-0.5">4.0</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Wednesday -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 bg-primary-fixed rounded-t-md h-20 flex items-end justify-center" style="height: 4.8rem;">
+<span class="font-label-sm text-[9px] text-on-primary-fixed mb-0.5">4.5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W</span>
+</div>
+<!-- Thursday -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 bg-primary-fixed rounded-t-md h-12 flex items-end justify-center" style="height: 3rem;">
+<span class="font-label-sm text-[9px] text-on-primary-fixed mb-0.5">2.8</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Friday (Today - highlighted) -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 bg-primary-container rounded-t-md flex items-end justify-center shadow-sm" style="height: 4.1rem;">
+<span class="font-label-sm text-[9px] text-on-primary mb-0.5 font-bold">3.8</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">F</span>
+</div>
+<!-- Saturday -->
+<div class="flex flex-col items-center gap-1.5 z-10 opacity-60">
+<div class="w-6 bg-surface-container-high rounded-t-md h-2"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+<!-- Sunday -->
+<div class="flex flex-col items-center gap-1.5 z-10 opacity-60">
+<div class="w-6 bg-surface-container-high rounded-t-md h-2"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Reassuring Offline Status Banner -->
+<div class="bg-surface-container-low rounded-2xl p-3.5 flex items-center justify-between gap-3 shadow-sm mb-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sessions Saved Locally</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Auto-syncs smoothly with campus servers</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary flex-shrink-0"></span>
+</div>
+</div>
+<script>
+  (function() {
+    let timeLeft = 1458; // 24m 18s initial
+    let totalTime = 1500; // 25m
+    let isRunning = true;
+    let timerInterval = null;
+    let isMuted = false;
+    let ambientPlaying = false;
+
+    const display = document.getElementById('timerDisplay');
+    const ring = document.getElementById('timerProgressRing');
+    const toggleBtn = document.getElementById('mainTimerBtn');
+    const toggleLabel = document.getElementById('mainTimerLabel');
+    const toggleIcon = document.getElementById('mainTimerIcon');
+    const soundToggle = document.getElementById('soundToggleBtn');
+    const soundIcon = document.getElementById('soundIcon');
+    const ambientBtn = document.getElementById('ambientSoundBtn');
+    const ambientPlayBtn = document.getElementById('playAmbientBtn');
+    const ambientPlayIcon = document.getElementById('ambientPlayIcon');
+    const ambientSoundName = document.getElementById('ambientSoundName');
+    
+    const sounds = ['Rain in Turing Hall', 'Lo-Fi Chill Library', 'Coffee Machine Hum', 'Soft White Noise'];
+    let currentSoundIdx = 0;
+
+    const circumference = 2 * Math.PI * 100; // ~628.318
+
+    function updateDisplay() {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      display.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      
+      const fraction = (totalTime - timeLeft) / totalTime;
+      const offset = circumference * (1 - fraction);
+      ring.style.strokeDashoffset = offset;
+    }
+
+    function tick() {
+      if (timeLeft > 0) {
+        timeLeft--;
+        updateDisplay();
+      } else {
+        clearInterval(timerInterval);
+        isRunning = false;
+        toggleLabel.textContent = 'Start';
+        toggleIcon.textContent = 'play_arrow';
+        if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+      }
+    }
+
+    window.toggleTimer = function() {
+      if (isRunning) {
+        clearInterval(timerInterval);
+        isRunning = false;
+        toggleLabel.textContent = 'Resume';
+        toggleIcon.textContent = 'play_arrow';
+      } else {
+        isRunning = true;
+        timerInterval = setInterval(tick, 1000);
+        toggleLabel.textContent = 'Pause';
+        toggleIcon.textContent = 'pause';
+      }
+    };
+
+    window.resetTimer = function() {
+      clearInterval(timerInterval);
+      isRunning = false;
+      timeLeft = totalTime;
+      toggleLabel.textContent = 'Start';
+      toggleIcon.textContent = 'play_arrow';
+      updateDisplay();
+    };
+
+    window.skipTimer = function() {
+      timeLeft = 0;
+      updateDisplay();
+      if (isRunning) toggleTimer();
+    };
+
+    window.switchMode = function(el, seconds, maxSeconds) {
+      document.querySelectorAll('.mode-tab').forEach(tab => {
+        tab.className = 'mode-tab flex-1 py-2 px-3 rounded-full text-center font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface';
+      });
+      el.className = 'mode-tab flex-1 py-2 px-3 rounded-full text-center font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm';
+      
+      totalTime = maxSeconds;
+      timeLeft = seconds;
+      clearInterval(timerInterval);
+      isRunning = false;
+      toggleLabel.textContent = 'Start';
+      toggleIcon.textContent = 'play_arrow';
+      updateDisplay();
+    };
+
+    soundToggle.addEventListener('click', () => {
+      isMuted = !isMuted;
+      soundIcon.textContent = isMuted ? 'volume_off' : 'volume_up';
+    });
+
+    ambientPlayBtn.addEventListener('click', () => {
+      ambientPlaying = !ambientPlaying;
+      ambientPlayIcon.textContent = ambientPlaying ? 'pause' : 'play_arrow';
+      if(ambientPlaying) {
+        ambientPlayBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        ambientPlayBtn.classList.remove('bg-surface-container-high', 'text-primary');
+      } else {
+        ambientPlayBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        ambientPlayBtn.classList.add('bg-surface-container-high', 'text-primary');
+      }
+    });
+
+    ambientBtn.addEventListener('click', () => {
+      currentSoundIdx = (currentSoundIdx + 1) % sounds.length;
+      ambientSoundName.textContent = sounds[currentSoundIdx];
+    });
+
+    // Start running tick
+    timerInterval = setInterval(tick, 1000);
+    updateDisplay();
+  })();
+</script></main><div class="fixed bottom-0 inset-x-0 z-50 pointer-events-none"><div class="relative max-w-[440px] mx-auto"><div class="absolute left-1/2 -top-6 -translate-x-1/2 pointer-events-auto z-20"><button aria-label="Quick Add Note, Task or Mood" class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] p-0.5 active:scale-95 transition-transform ring-4 ring-surface"><span class="material-symbols-outlined text-[30px]">add</span></button></div></div></div><nav class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] pb-safe" data-active-classes="text-primary font-bold"><div class="flex justify-between items-center h-20 px-2 max-w-[440px] mx-auto"><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="academics-hub" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-0.5">Academics</span></a><div class="flex-1 flex flex-col items-center justify-end h-14 pb-1 pointer-events-none opacity-0"><span class="font-label-sm text-label-sm">Add</span></div><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-map" href="#"><span class="material-symbols-outlined text-[24px]">near_me</span><span class="font-label-sm text-label-sm mt-0.5">Campus</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="campus-life" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm mt-0.5">Life</span></a><a class="flex-1 flex flex-col items-center justify-center h-14 text-on-surface-variant hover:text-on-surface transition-all active:scale-95" data-path="student-wellbeing" href="#"><span class="material-symbols-outlined text-[24px]">vital_signs</span><span class="font-label-sm text-label-sm mt-0.5">Wellbeing</span></a></div></nav></body></html>

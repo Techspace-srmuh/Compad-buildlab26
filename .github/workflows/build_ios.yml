@@ -1,4 +1,4 @@
-name: Build CompAd iOS Release (iPhone)
+name: Build Compad iOS Release (iPhone)
 
 on:
   push:
@@ -23,25 +23,25 @@ jobs:
           cache: true
 
       - name: Install Dependencies
-        working-directory: comp_ad
+        working-directory: compad
         run: flutter pub get
 
       - name: Set up CocoaPods
-        working-directory: comp_ad/ios
+        working-directory: compad/ios
         run: |
           pod repo update
           pod install
 
       - name: Build iOS Application (Release Mode)
-        working-directory: comp_ad
+        working-directory: compad
         run: flutter build ios --release --no-codesign
 
       - name: Package Payload into Standalone .IPA for iPhone
         run: |
           mkdir -p Payload
-          cp -r comp_ad/build/ios/iphoneos/Runner.app Payload/
+          cp -r compad/build/ios/iphoneos/Runner.app Payload/
           zip -r compad-iphone-release.ipa Payload
-          zip -r compad-runner-app.zip comp_ad/build/ios/iphoneos/Runner.app
+          zip -r compad-runner-app.zip compad/build/ios/iphoneos/Runner.app
 
       - name: Upload iPhone IPA Artifact
         uses: actions/upload-artifact@v4

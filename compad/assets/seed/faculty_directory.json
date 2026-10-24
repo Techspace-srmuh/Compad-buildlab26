@@ -1,0 +1,58 @@
+[
+  {
+    "id": "fac-1",
+    "name": "Dr. Elena Rostova",
+    "role": "Associate Professor of Computer Science",
+    "department": "Computer Science",
+    "office": "Turing Hall 412",
+    "email": "elena.rostova@campus.edu",
+    "phone": "555-0212",
+    "officeHours": "Tuesdays & Thursdays 14:00 - 16:00",
+    "research": "Algorithms, Graph Analytics, Distributed Consensus",
+    "courses": [
+      "CS 204"
+    ]
+  },
+  {
+    "id": "fac-2",
+    "name": "Prof. Marcus Vance",
+    "role": "Chair, Department of Mathematics",
+    "department": "Mathematics",
+    "office": "Euler Science Center 305",
+    "email": "marcus.vance@campus.edu",
+    "phone": "555-0245",
+    "officeHours": "Mondays & Wednesdays 10:00 - 12:00",
+    "research": "Linear Algebra, Spectral Graph Theory, Optimization",
+    "courses": [
+      "MATH 201"
+    ]
+  },
+  {
+    "id": "fac-3",
+    "name": "Dr. Aris Thorne",
+    "role": "Assistant Professor of Applied Physics",
+    "department": "Physics",
+    "office": "Newton Labs 210",
+    "email": "aris.thorne@campus.edu",
+    "phone": "555-0278",
+    "officeHours": "Wednesdays 13:00 - 15:00",
+    "research": "Quantum Optics, Electromagnetic Resonators",
+    "courses": [
+      "PHYS 102"
+    ]
+  },
+  {
+    "id": "fac-4",
+    "name": "Dr. Sarah Jenkins",
+    "role": "Senior Lecturer in Humanities & Ethics",
+    "department": "Humanities",
+    "office": "Humanities Wing 118",
+    "email": "sarah.jenkins@campus.edu",
+    "phone": "555-0290",
+    "officeHours": "Thursdays 11:00 - 13:00",
+    "research": "AI Ethics, Philosophy of Technology, Science Communication",
+    "courses": [
+      "ENG 105"
+    ]
+  }
+]

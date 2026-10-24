@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#dae2fd", "background": "#faf8ff", "error-container": "#ffdad6", "secondary-fixed": "#71f8e4", "on-tertiary-fixed": "#2a1700", "on-surface": "#131b2e", "on-secondary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eef0ff", "tertiary": "#5c3800", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed-variant": "#653e00", "surface-bright": "#faf8ff", "on-secondary-container": "#006f64", "surface-container": "#eaedff", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#ffb95f", "on-tertiary": "#ffffff", "primary-container": "#3f3ddb", "primary-fixed": "#e1dfff", "on-tertiary-container": "#ffc277", "on-primary-container": "#c9c8ff", "secondary": "#006b5f", "outline-variant": "#c7c4d8", "secondary-fixed-dim": "#4fdbc8", "secondary-container": "#6df5e1", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "on-surface-variant": "#464555", "on-primary-fixed-variant": "#2c26cb", "inverse-primary": "#c1c1ff", "on-secondary-fixed-variant": "#005048", "on-error": "#ffffff", "inverse-surface": "#283044", "primary": "#2319c5", "on-secondary-fixed": "#00201c", "on-primary-fixed": "#08006c", "primary-fixed-dim": "#c1c1ff", "surface-container-low": "#f2f3ff", "surface-container-lowest": "#ffffff", "outline": "#767587", "surface": "#faf8ff", "surface-tint": "#4746e2", "tertiary-container": "#7b4d00", "on-error-container": "#93000a", "on-primary": "#ffffff", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "title-md": ["16px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600"}], "title-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Compad</span><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80 shadow-sm"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="material-symbols-outlined text-[14px] text-emerald-700">cloud_done</span><span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-emerald-800">Offline Ready</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Emergency SOS" class="h-9 px-3 rounded-full bg-error text-on-error flex items-center justify-center gap-1 shadow-[0_4px_14px_rgba(239,68,68,0.4)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[16px]">sos</span><span class="font-label-sm text-label-sm font-bold">SOS</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-1 ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-28 bg-surface px-margin min-h-screen"><div class="flex flex-col w-full gap-space-md">
+<!-- Sub-header & Context Info -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Wellbeing</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Sleep &amp; Rest</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm">Offline Logged</span>
+</div>
+</div>
+<div class="flex flex-col gap-0.5">
+<h1 class="font-headline-md text-headline-md text-on-surface">Sleep &amp; Wellness Log</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Track circadian rhythm and academic recovery.</p>
+</div>
+<!-- 1. Sleep Summary Hero Card -->
+<section class="relative overflow-hidden rounded-[20px] bg-surface-container-low p-space-md shadow-sm">
+<div class="absolute -right-8 -bottom-8 w-40 h-40 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant">Last Night</span>
+<div class="font-headline-md text-headline-md text-on-surface leading-tight">7h 42m</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Deep Rest
+        </span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Score: 88%</span>
+</div>
+</div>
+<!-- Sleep Metric Chips -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-md pt-space-xs relative z-10">
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sleep Debt</span>
+<span class="font-title-md text-title-md text-secondary mt-0.5">-18m</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Optimal zone</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Efficiency</span>
+<span class="font-title-md text-title-md text-on-surface mt-0.5">92%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Restful cycle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">REM Cycles</span>
+<span class="font-title-md text-title-md text-on-surface mt-0.5">4 Full</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">89m duration</span>
+</div>
+</div>
+</section>
+<!-- 2. Bedtime & Wake Time Pickers -->
+<section class="rounded-[20px] bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<h2 class="font-title-md text-title-md text-on-surface">Time Intervals</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded-full bg-secondary-container">Target: 8h 00m</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Bedtime interactive card -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-xs flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Bedtime</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">mode_night</span>
+</div>
+<div class="my-2 text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight" id="bedtime-val">11:15 PM</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs pt-1">
+<button aria-label="Decrease bedtime" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface active:scale-95 transition-transform" id="bedtime-minus">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1">15m</span>
+<button aria-label="Increase bedtime" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface active:scale-95 transition-transform" id="bedtime-plus">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Wake time interactive card -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-xs flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Wake Time</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">wb_sunny</span>
+</div>
+<div class="my-2 text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight" id="wake-val">06:57 AM</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs pt-1">
+<button aria-label="Decrease wake time" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface active:scale-95 transition-transform" id="wake-minus">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1">15m</span>
+<button aria-label="Increase wake time" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface active:scale-95 transition-transform" id="wake-plus">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">flare</span>
+<span class="font-body-sm text-body-sm">Consistent sleep window kept for 4 consecutive days.</span>
+</div>
+</section>
+<!-- 3. Sleep Quality Rating & Context Tags -->
+<section class="rounded-[20px] bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface">Rest Quality</h2>
+<span class="font-label-md text-label-md text-secondary" id="quality-state">Optimal</span>
+</div>
+<!-- Rating Selector -->
+<div class="grid grid-cols-5 gap-1.5 p-1 bg-surface-container-lowest rounded-2xl shadow-xs">
+<button class="quality-btn py-2.5 flex flex-col items-center gap-1 rounded-xl transition-all text-on-surface-variant hover:bg-surface-container-low" data-rating="Poor">
+<span class="text-xl">😴</span>
+<span class="font-label-sm text-label-sm">Poor</span>
+</button>
+<button class="quality-btn py-2.5 flex flex-col items-center gap-1 rounded-xl transition-all text-on-surface-variant hover:bg-surface-container-low" data-rating="Fair">
+<span class="text-xl">🥱</span>
+<span class="font-label-sm text-label-sm">Fair</span>
+</button>
+<button class="quality-btn py-2.5 flex flex-col items-center gap-1 rounded-xl transition-all text-on-surface-variant hover:bg-surface-container-low" data-rating="Good">
+<span class="text-xl">😌</span>
+<span class="font-label-sm text-label-sm">Good</span>
+</button>
+<button class="quality-btn py-2.5 flex flex-col items-center gap-1 rounded-xl transition-all text-on-surface-variant hover:bg-surface-container-low" data-rating="Great">
+<span class="text-xl">✨</span>
+<span class="font-label-sm text-label-sm">Great</span>
+</button>
+<button class="quality-btn active-rating py-2.5 flex flex-col items-center gap-1 rounded-xl transition-all bg-secondary-container text-on-secondary-container font-semibold shadow-xs" data-rating="Optimal">
+<span class="text-xl">🌿</span>
+<span class="font-label-sm text-label-sm">Optimal</span>
+</button>
+</div>
+<!-- Context Habit Tags -->
+<div class="flex flex-col gap-1.5 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Night Factors</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="habit-tag active-tag px-3 py-1.5 rounded-full text-label-md font-label-md bg-secondary text-on-secondary transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done</span>
+          Fell asleep &lt;15m
+        </button>
+<button class="habit-tag active-tag px-3 py-1.5 rounded-full text-label-md font-label-md bg-secondary text-on-secondary transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done</span>
+          No late screens
+        </button>
+<button class="habit-tag active-tag px-3 py-1.5 rounded-full text-label-md font-label-md bg-secondary text-on-secondary transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done</span>
+          Quiet room
+        </button>
+<button class="habit-tag px-3 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-lowest text-on-surface-variant transition-all hover:bg-surface-container">
+          No caffeine after 4pm
+        </button>
+<button class="habit-tag px-3 py-1.5 rounded-full text-label-md font-label-md bg-surface-container-lowest text-on-surface-variant transition-all hover:bg-surface-container">
+          Reading session
+        </button>
+</div>
+</div>
+</section>
+<!-- 4. Weekly Sleep Chart -->
+<section class="rounded-[20px] bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weekly Rhythm</span>
+<span class="font-title-md text-title-md text-on-surface">Average 7.7 hrs/night</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+        +0.4h vs last week
+      </div>
+</div>
+<!-- Chart Canvas / Visualization -->
+<div class="relative w-full pt-4 pb-2 bg-surface-container-lowest rounded-xl px-3 shadow-xs">
+<!-- 8h Target Guideline -->
+<div class="absolute left-3 right-3 top-[36%] border-b border-dashed border-secondary/40 flex justify-end">
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-lowest pl-1 -translate-y-2">8h Target</span>
+</div>
+<div class="grid grid-cols-7 gap-2 items-end h-32 pt-4">
+<!-- Mon -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">7.2</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-surface-container-highest transition-all hover:opacity-90" style="height: 68%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+</div>
+<!-- Tue -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">8.0</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-secondary transition-all hover:opacity-90" style="height: 78%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">T</span>
+</div>
+<!-- Wed -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">6.8</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-surface-container-highest transition-all hover:opacity-90" style="height: 60%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W</span>
+</div>
+<!-- Thu -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">7.7</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-secondary-fixed-dim transition-all hover:opacity-90" style="height: 74%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Fri -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">8.2</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-secondary transition-all hover:opacity-90" style="height: 82%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">F</span>
+</div>
+<!-- Sat -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">8.5</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-secondary transition-all hover:opacity-90" style="height: 88%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">S</span>
+</div>
+<!-- Sun (Last night) -->
+<div class="flex flex-col items-center gap-1 h-full justify-end">
+<span class="font-label-sm text-label-sm text-secondary font-bold">7.7</span>
+<div class="w-full max-w-[28px] rounded-t-lg bg-secondary shadow-xs transition-all ring-2 ring-secondary/20" style="height: 74%;"></div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">S</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. 'Sleep vs Mood' Insight Card -->
+<section class="rounded-[20px] bg-surface-container-low p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-secondary uppercase tracking-wider">Circadian Pattern</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated correlation</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          On nights you sleep <strong class="text-secondary font-semibold">7.5h+</strong>, your next-day mood ratings are <span class="text-secondary font-bold">42% higher</span> and Pomodoro focus efficiency peaks before 2 PM.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. Bedtime Wind-Down & Calming Shortcuts -->
+<section class="rounded-[20px] bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">notifications_active</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Wind-Down Reminder</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gentle prompt at 10:30 PM</span>
+</div>
+</div>
+<!-- Interactive Toggle -->
+<button aria-checked="true" class="w-12 h-7 rounded-full bg-secondary transition-colors relative p-0.5 focus:outline-hidden" id="wind-toggle" role="switch">
+<span class="w-6 h-6 rounded-full bg-on-secondary block transition-transform translate-x-5 shadow-xs" id="wind-thumb"></span>
+</button>
+</div>
+<!-- Ambient Sound Capsule -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest shadow-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Rain in Turing Hall</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lo-fi binaural campus soundscape</span>
+</div>
+</div>
+<button aria-label="Play Rain in Turing Hall" class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary transition-colors flex items-center justify-center active:scale-95" id="sound-btn">
+<span class="material-symbols-outlined text-[18px]" id="sound-icon">play_arrow</span>
+</button>
+</div>
+<!-- Quick Journal/Notes action -->
+<div class="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-container-lowest shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">edit_note</span>
+<span class="font-body-md text-body-md text-on-surface">Log midnight thoughts or dreams</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline">Add Note</button>
+</div>
+</section>
+<!-- Primary Confirmation Action -->
+<div class="pt-1 pb-2">
+<button class="w-full h-12 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-sm hover:opacity-95 active:scale-98 transition-all flex items-center justify-center gap-2" id="save-log-btn">
+<span class="material-symbols-outlined text-[18px]">bookmark_added</span>
+<span>Save Sleep Record</span>
+</button>
+</div>
+</div>
+<script>
+  (function () {
+    // Quality selection micro-interaction
+    const qualityButtons = document.querySelectorAll('.quality-btn');
+    const qualityStateLabel = document.getElementById('quality-state');
+    
+    qualityButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        qualityButtons.forEach((b) => {
+          b.classList.remove('active-rating', 'bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-xs');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('active-rating', 'bg-secondary-container', 'text-on-secondary-container', 'font-semibold', 'shadow-xs');
+        btn.classList.remove('text-on-surface-variant');
+        if (qualityStateLabel) {
+          qualityStateLabel.textContent = btn.getAttribute('data-rating') || 'Optimal';
+        }
+      });
+    });
+
+    // Tag selector micro-interaction
+    const habitTags = document.querySelectorAll('.habit-tag');
+    habitTags.forEach((tag) => {
+      tag.addEventListener('click', () => {
+        const isActive = tag.classList.contains('active-tag');
+        if (isActive) {
+          tag.classList.remove('active-tag', 'bg-secondary', 'text-on-secondary');
+          tag.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          const checkIcon = tag.querySelector('.material-symbols-outlined');
+          if (checkIcon) checkIcon.remove();
+        } else {
+          tag.classList.add('active-tag', 'bg-secondary', 'text-on-secondary');
+          tag.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+          const span = document.createElement('span');
+          span.className = 'material-symbols-outlined text-[14px]';
+          span.textContent = 'done';
+          tag.prepend(span);
+        }
+      });
+    });
+
+    // Wind-down Reminder Toggle
+    const toggleBtn = document.getElementById('wind-toggle');
+    const toggleThumb = document.getElementById('wind-thumb');
+    let isToggled = true;
+
+    if (toggleBtn && toggleThumb) {
+      toggleBtn.addEventListener('click', () => {
+        isToggled = !isToggled;
+        toggleBtn.setAttribute('aria-checked', String(isToggled));
+        if (isToggled) {
+          toggleBtn.classList.remove('bg-surface-container-high');
+          toggleBtn.classList.add('bg-secondary');
+          toggleThumb.classList.remove('translate-x-0');
+          toggleThumb.classList.add('translate-x-5');
+        } else {
+          toggleBtn.classList.remove('bg-secondary');
+          toggleBtn.classList.add('bg-surface-container-high');
+          toggleThumb.classList.remove('translate-x-5');
+          toggleThumb.classList.add('translate-x-0');
+        }
+      });
+    }
+
+    // Sound Player Mini-Toggle
+    const soundBtn = document.getElementById('sound-btn');
+    const soundIcon = document.getElementById('sound-icon');
+    let isPlaying = false;
+
+    if (soundBtn && soundIcon) {
+      soundBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        soundIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+        if (isPlaying) {
+          soundBtn.classList.add('bg-secondary', 'text-on-secondary');
+          soundBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        } else {
+          soundBtn.classList.remove('bg-secondary', 'text-on-secondary');
+          soundBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        }
+      });
+    }
+
+    // Time stepper adjustments
+    let bedtimeHour = 23;
+    let bedtimeMinute = 15;
+    let wakeHour = 6;
+    let wakeMinute = 57;
+
+    const bedtimeVal = document.getElementById('bedtime-val');
+    const wakeVal = document.getElementById('wake-val');
+
+    function formatTime(h, m) {
+      const period = h >= 12 ? 'PM' : 'AM';
+      const displayHour = h % 12 === 0 ? 12 : h % 12;
+      const displayMinute = m < 10 ? '0' + m : m;
+      return `${displayHour < 10 ? '0' + displayHour : displayHour}:${displayMinute} ${period}`;
+    }
+
+    document.getElementById('bedtime-minus')?.addEventListener('click', () => {
+      bedtimeMinute -= 15;
+      if (bedtimeMinute < 0) {
+        bedtimeMinute = 45;
+        bedtimeHour = (bedtimeHour - 1 + 24) % 24;
+      }
+      if (bedtimeVal) bedtimeVal.textContent = formatTime(bedtimeHour, bedtimeMinute);
+    });
+
+    document.getElementById('bedtime-plus')?.addEventListener('click', () => {
+      bedtimeMinute += 15;
+      if (bedtimeMinute >= 60) {
+        bedtimeMinute = 0;
+        bedtimeHour = (bedtimeHour + 1) % 24;
+      }
+      if (bedtimeVal) bedtimeVal.textContent = formatTime(bedtimeHour, bedtimeMinute);
+    });
+
+    document.getElementById('wake-minus')?.addEventListener('click', () => {
+      wakeMinute -= 15;
+      if (wakeMinute < 0) {
+        wakeMinute = 45;
+        wakeHour = (wakeHour - 1 + 24) % 24;
+      }
+      if (wakeVal) wakeVal.textContent = formatTime(wakeHour, wakeMinute);
+    });
+
+    document.getElementById('wake-plus')?.addEventListener('click', () => {
+      wakeMinute += 15;
+      if (wakeMinute >= 60) {
+        wakeMinute = 0;
+        wakeHour = (wakeHour + 1) % 24;
+      }
+      if (wakeVal) wakeVal.textContent = formatTime(wakeHour, wakeMinute);
+    });
+
+    // Save Record toast feedback
+    const saveBtn = document.getElementById('save-log-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const originalText = saveBtn.innerHTML;
+        saveBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[18px]">check</span>
+          <span>Logged Successfully!</span>
+        `;
+        setTimeout(() => {
+          saveBtn.innerHTML = originalText;
+        }, 1800);
+      });
+    }
+  })();
+</script></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><div class="relative w-full max-w-md mx-auto pointer-events-auto"><div class="absolute -top-6 left-1/2 -translate-x-1/2 z-20"><button aria-label="Quick Add" class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-[0_8px_24px_-4px_rgba(63,61,219,0.45)] ring-4 ring-surface flex items-center justify-center transition-transform active:scale-95"><span class="material-symbols-outlined text-[30px]">add</span></button></div><nav class="w-full bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)] rounded-t-3xl" data-active-classes="text-secondary font-semibold"><div class="grid grid-cols-5 items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="compad-gamification-study-quests" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-1">Home</span></a><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="academics" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm mt-1">Academics</span></a><div class="flex flex-col items-center justify-end h-14 min-w-[44px] pb-1"><span class="font-label-sm text-label-sm text-on-surface-variant/70">Add</span></div><a class="flex flex-col items-center justify-center h-14 min-w-[44px] text-on-surface-variant transition-colors" data-path="campus" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm mt-1">Campus</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-14 min-w-[44px] transition-colors text-secondary font-semibold" data-path="wellbeing-hub" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-sm text-label-sm mt-1">Wellbeing</span></a></div></nav></div></div></body></html>

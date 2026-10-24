@@ -8,7 +8,7 @@ set -e
 echo "🚀 Starting CompAd iPhone Release Build..."
 
 # Move to Flutter directory
-cd "$(dirname "$0")/comp_ad"
+cd "$(dirname "$0")/compad"
 
 echo "📦 Fetching Flutter dependencies..."
 flutter pub get
